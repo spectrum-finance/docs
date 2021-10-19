@@ -1,6 +1,9 @@
 {
   "name": "ergodex-docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": "git@github.com:ergolabs/ergodex-docs.git",
+  "author": "yashablack <iamyashablack@gmail.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
