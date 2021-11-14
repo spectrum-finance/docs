@@ -44,8 +44,9 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt:      'My Site Logo',
+          src:      'img/logo.svg',
+          srcDark: 'img/logo.svg',
         },
         items: [
           {
