@@ -20,11 +20,11 @@
   --ifm-code-font-size: 95%;
 }
 
-header.hero.hero--primary {
+html[data-theme='light'] header.hero.hero--primary {
   color: #262626;
 }
 
-footer.footer--dark {
+html[data-theme='light'] footer.footer--dark {
   background: #f0f2f5;
 }
 html[data-theme='light'] footer.footer--dark {
