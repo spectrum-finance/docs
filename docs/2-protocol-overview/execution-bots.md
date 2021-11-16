@@ -1,8 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
+hide: true
 ---
 
-# Manage Docs Versions
+# Execution Bots
 
 Docusaurus can manage multiple versions of your docs.
 

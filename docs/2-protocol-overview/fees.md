@@ -1,10 +1,16 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Governance
+# Fees
 
-Docusaurus can manage multiple versions of your docs.
+:::caution
+
+This article may contain temporary information and only refer to ErgoDEX V1
+
+:::
+
+ErgoDEX protocol includes 3 types of fees
 
 ## Create a docs version
 

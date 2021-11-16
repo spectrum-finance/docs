@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# Tokenomics
+# Quick Start
 
 Docusaurus can manage multiple versions of your docs.
 

@@ -7,14 +7,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Welcome to the ErgoDex Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ergodex',
+  projectName: 'ergodex-docs',
 
   presets: [
     [
@@ -46,23 +46,22 @@ const config = {
         logo: {
           alt:      'My Site Logo',
           src:      'img/logo.svg',
-          srcDark: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/docs/protocol-overview/amm/liquidity',
             position: 'left',
             label: 'Protocol',
           },
-          {to: '/blog', label: 'Tech stuff', position: 'left'},
+          {to: '/docs/tech-stuff/contracts-overview', label: 'Tech stuff', position: 'left'},
           {
-            to: '/blog',
+            to: '/docs/faq',
             label: 'FAQ',
             position: 'right',
           },
           {
-            href: 'https://github.com/ergolabs/ergodex-docs',
+            href: 'https://github.com/ergolabs',
             label: 'GitHub',
             position: 'right',
           },
