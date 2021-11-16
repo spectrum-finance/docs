@@ -20,16 +20,24 @@
   --ifm-code-font-size: 95%;
 }
 
-header.hero.hero--primary {
+.pagination-nav__label, .theme-edit-this-page {
+  color: #ff5135;
+}
+
+.pagination-nav__link:hover {
+  border-color: #ff5135;
+}
+
+html[data-theme='light'] header.hero.hero--primary {
   color: #262626;
 }
 
-footer.footer--dark {
+html[data-theme='light'] footer.footer--dark {
   background: #f0f2f5;
 }
 html[data-theme='light'] footer.footer--dark {
   --ifm-footer-title-color: #262626;
-  --ifm-footer-link-color: #595959
+  --ifm-footer-link-color: #595959xF
 }
 
 .docusaurus-highlight-code-line {
