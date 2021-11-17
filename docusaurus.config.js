@@ -48,11 +48,12 @@ const config = {
                 },
                 items: [
                     {
-                        to: '/docs/protocol-overview/amm/liquidity',
+                        to: '/docs/about-ergodex/intro',
                         position: 'left',
-                        label: 'Protocol',
+                        label: 'Explore ErgoDEX',
                     },
-                    {to: '/docs/tech-stuff/contracts-overview', label: 'Tech stuff', position: 'left'},
+                    {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
+                    {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
                     {
                         to: '/docs/faq',
                         label: 'FAQ',
