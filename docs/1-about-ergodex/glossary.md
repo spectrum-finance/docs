@@ -24,7 +24,7 @@ Used to redeem LP tokens and receive back a number of each token initially depos
 Used to refund a submitted transaction that has failed or stuck due to low liquidity/low slippage value used.
 
 ## Constant Product Formula
-The automated market-making algorithm used by ErgoDEX, x*y=c. where x and y are deposits on tokens X and Y respectively and c is their product which has to remain constant after swap operations. CFMMs provide liquidity across the entire price range.
+The automated market-making algorithm used by ErgoDEX, `x*y=c`. where `x` and `y` are deposits on tokens X and Y respectively and c is their product which has to remain constant after swap operations. CFMMs provide liquidity across the entire price range.
 
 ## Liquidity
 Digital assets that are stored in a pool contract and can be traded against by traders.
