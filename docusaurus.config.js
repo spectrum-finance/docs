@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'Welcome to the ErgoDex Docs',
     tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
-    url: 'https://your-docusaurus-test-site.com',
+    url: 'https://docs.ergodex.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -23,14 +23,12 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+                    editUrl: 'https://github.com/ergolabs/ergodex-docs',
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+                        'https://github.com/ergolabs/ergodex-docs',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

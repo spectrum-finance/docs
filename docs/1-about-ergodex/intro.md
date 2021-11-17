@@ -15,7 +15,7 @@ consequence exists for purposes of both communities. You can imagine ErgoDEX inf
 - **ErgoLabs:** The team of developers who is developing and maintaining ErgoDEX protocol, user interface and other 
   products;
 - **The ErgoDEX Protocol:** a set of smart contracts that create an automated market maker and order book;
-- **ErgoDEX User Interface (UI):** Web (or mobile) interface which provides access in conjunction with the protocol
+- **ErgoDEX User Interface (UI):** Web (or mobile) interface which provides access in conjunction with the protocol;
 - **ErgoDEX Execution Bots:** off-chain software which function is to execute DEX orders and which works in completely 
   decentralized manner.
 

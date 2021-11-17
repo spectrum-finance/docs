@@ -1,55 +1,27 @@
 ---
 sidebar_position: 1
+title: Principles
 ---
 
-# Principles
+# Principles, mission, vision
 
-Docusaurus can manage multiple versions of your docs.
+:::tip
 
-## Create a docs version
+ErgoDEX principles refer to the [Ergo manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/)
+paper. The team is inspired by the ideas described in the paper and implicitly commits every point.
 
-Release a version 1.0 of your project:
+:::
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+## Core principles
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+- Decentralization first;
+- Openness and transparency in organisational and tech aspects;
+- Orientation to user's success.
 
-Your docs now have 2 versions:
+## Mission statement
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+We are working to enrich regular people through the most secure and easy to use cross-chain decentralized exchange.
 
-## Add a Version Dropdown
+## Vision
 
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+Deliver new experiences anywhere, on any device with world-class decentralized financial software.

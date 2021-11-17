@@ -4,52 +4,76 @@ sidebar_position: 0
 
 # Quick Start
 
-Docusaurus can manage multiple versions of your docs.
+## 1. Install wallet
+1.1. First you need to install a wallet. ErgoDEX currently supports only Yoroi Nightly so the 
+guide will describe the process of working with that wallet.
 
-## Create a docs version
+1.2. To install Yoroi Nightly visit the following links in Google Store:
+- [Yoroi Nightly](https://chrome.google.com/webstore/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo): the wallet app;
+- [Yoroi dApp connector](https://chrome.google.com/webstore/detail/yoroi-ergo-dapp-connector/chifollcalpmjdiokipacefnpmbgjnle): app to connect to ErgoDEX 
 
-Release a version 1.0 of your project:
+:::caution Warning
+Note that Yoroi Nightly and Yoroi dApp connector are not a stable version or Yoroi wallet. We are currently working with
+Emurgo (Yoroi wallet developer) on an updated version of Yoroi.
+:::
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+## 2. Create a wallet
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+2.1. Click on Yoroi Nightly extension which is in the top right corner of your browser window:
 
-Your docs now have 2 versions:
+![Yoroi Nightly click wallet](/img/user-guides/quick-start/1.png)
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+2.2. Click on "Create Wallet" button:
 
-## Add a Version Dropdown
+![Yoroi Nightly click wallet](/img/user-guides/quick-start/2.png)
 
-To navigate seamlessly across versions, add a version dropdown.
+2.3. Scroll to "Ergo" button to create a wallet in Ergo network:
 
-Modify the `docusaurus.config.js` file:
+![Yoroi Nightly click wallet](/img/user-guides/quick-start/3.png)
 
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+2.4. Type wallet name (on your choice) and wallet spending password:
+![Yoroi Nightly click wallet](/img/user-guides/quick-start/4.png)
 
-The docs version dropdown appears in your navbar:
+2.5. Record a recovery phrase in a safe place! This phrase is the only way to restore your wallet!
+![Yoroi Nightly click wallet](/img/user-guides/quick-start/5.png)
 
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
+2.6. Follow the steps that Yoroi suggests, and finally you will see the screen like following. That means that you've 
+successfully created your wallet. Congrats!
 
-## Update an existing version
+![Yoroi Nightly wallet screen](/img/user-guides/quick-start/6.png)
 
-It is possible to edit versioned docs in their respective folder:
+## 3. Get assets
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+To get some assets to swap or to provide liquidity first you will need to transfer them to the Yoroi Nightly address:
+
+![Yoroi Nightly address](/img/user-guides/quick-start/10.png)
+
+### 3.1. Get real assets
+
+:::caution Warning
+We recommend use only small amounts of assets while ErgoDEX contracts was not audited. 
+:::
+
+- If you already have ERG on your Yoroi wallet just transfer them to Nightly version as usual;
+- Otherwise, get some ERG on exchange ([list of available exchanges](https://ergoplatform.org/en/exchanges/)) and
+  withdrawal them to your Yoroi Nightly wallet address.
+
+### 3.2. Get test assets
+Just visit [Ergo Faucet](https://ergofaucet.org/) and follow suggested steps.
+
+## 4. Connect wallet to ErgoDEX
+
+4.1. Go to [app.ergodex.io](https://app.ergodex.io)
+
+4.2. Click connect wallet button
+
+![Yoroi Nightly wallet screen](/img/user-guides/quick-start/7.png)
+
+4.2. Choose Yoroi
+
+![Yoroi Nightly wallet screen](/img/user-guides/quick-start/8.png)
+
+4.3. Congrats! Now you are ready to start use ErgoDEX! Your ERG balance will appear here!
+
+![Yoroi Nightly wallet screen](/img/user-guides/quick-start/9.png)
+

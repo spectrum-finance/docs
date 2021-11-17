@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Set up Ergo Bots
 ---
 
-# Perform Swap
+# How to set up execution Bots for Ergo network?
 
 Let's translate `docs/intro.md` to French.
 

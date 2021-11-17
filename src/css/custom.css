@@ -24,6 +24,10 @@
   color: #ff5135;
 }
 
+.theme-edit-this-page:hover {
+  color: #FF725C;
+}
+
 .pagination-nav__link:hover {
   border-color: #ff5135;
 }
@@ -71,4 +75,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .navbar__brand, .navbar__logo {
   margin-right: 0 !important;
+}
+
+.theme-doc-markdown a {
+  color: #ff5135;
+  text-decoration: none;
+}
+
+.theme-doc-markdown a:hover, .theme-doc-markdown a:focus {
+  color: #FF725C;
+}
+
+.theme-doc-markdown.markdown img {
+  border-radius: 8px;
 }

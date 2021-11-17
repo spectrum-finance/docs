@@ -1,61 +1,39 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Fees
 
 :::caution
 
-This article may contain temporary information and only refer to ErgoDEX V1
+This article may contain temporary information and applies only to the ErgoDEX V1
 
 :::
 
-ErgoDEX protocol includes 3 types of fees
+ErgoDEX protocol V1 includes 3 types of fees:
 
-## Create a docs version
+| Fee              | Assignment                         | Unit                              | Amount                            |
+| ---------------- | ---------------------------------- | --------------------------------- | --------------------------------- |
+| Network Fee      | Paid to Miners or Node stake pools | Native network currency (ERG/ADA) | min - ∞ (user choice)             |
+| Execution Fee    | Paid to execution bots             | Native network currency (ERG/ADA) | [Formula](#execution-fee-formula) |
+| DEX Fee (UI Fee) | Paid to UI provider                | Native network currency (ERG/ADA) | 0.01 ERG / 0.4 ADA                |
 
-Release a version 1.0 of your project:
+#### Execution fee formula
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+**Execution Fee** is always a range of values (`minExFee - maxExFee`)
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+`minExFee = minerFee * 1.5`
 
-Your docs now have 2 versions:
+`1.5`: constant factor which have to satisfy the condition `minExFee > minerFee`
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+`maxExFee = minExFee * Nitro`
 
-## Add a Version Dropdown
+#### Nitro
+**Nitro** is the multiplier of the max execution fee. It is defined in order to give the user the ability to control 
+both the speed order execution and the maximum possible output.
 
-To navigate seamlessly across versions, add a version dropdown.
+`MaxOutput = maxExFee / exFeePerToken`
 
-Modify the `docusaurus.config.js` file:
+where
 
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+`exFeePerToken = minExFee / minOutput`
