@@ -12,7 +12,7 @@ reserves at prices determined by a fixed formula. Anyone may contribute liquidit
 An order book system is similar to what you will see on traditional centralized exchanges. It shows buyers and sellers with amounts and the value of bids on one table.
 
 ## Asset
-These are tokens that exist on the DEX that can be traded.
+A token which can be traded on the DEX.
 
 ## Deposit
 Used to deposit a token pair into the DEX to receive LP tokens and earn on protocol fees.
