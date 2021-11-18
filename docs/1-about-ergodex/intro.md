@@ -12,11 +12,11 @@ liquidity among different networks. ErgoDEX will eventually feature a full AMM, 
 ErgoDEX is an open-source DeFi product which take a part in both Ergo and Cardano platforms and as a 
 consequence exists for purposes of both communities. You can imagine ErgoDEX infrastructure like the following:
 
-- **ErgoLabs:** The team of developers who is developing and maintaining ErgoDEX protocol, user interface and other 
+- **ErgoLabs:** the team of developers who are developing and maintaining ErgoDEX protocol, user interface and other 
   products;
 - **The ErgoDEX Protocol:** a set of smart contracts that create an automated market maker and order book;
-- **ErgoDEX User Interface (UI):** Web (or mobile) interface which provides access in conjunction with the protocol;
-- **ErgoDEX Execution Bots:** off-chain software which function is to execute DEX orders and which works in completely 
+- **ErgoDEX User Interface (UI):** a web (or mobile) interface which provides access in conjunction with the protocol;
+- **ErgoDEX Execution Bots:** off-chain software whose function is to execute DEX orders and works in a completely 
   decentralized manner.
 
 
