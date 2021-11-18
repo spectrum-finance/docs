@@ -36,7 +36,7 @@ A liquidity provider is someone who deposits tokens into a liquidity pool. Liqui
 A pool containing 2 tokens that are available to trade against each other.
 
 ## UI Fee
-Fees that are rewarded to the protocol itself.
+Fees that the UI provider is rewarded with.
 
 ## Miner Fees
 Fees that are rewarded to miners for confirming the transactions.
