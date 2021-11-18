@@ -18,7 +18,7 @@ A token which can be traded on the DEX.
 Used to deposit a token pair into the DEX to receive LP tokens and earn on protocol fees.
 
 ## Redeem
-Used to redeem LP tokens and receive back a number of each token initially deposited.
+An act of reclaiming liquidity which was provided to a liquidity pool earlier plus protocol fees. 
 
 ## Refund
 Used to refund a submitted transaction that has failed or stuck due to low liquidity/low slippage value used.
