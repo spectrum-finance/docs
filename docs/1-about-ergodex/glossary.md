@@ -56,8 +56,8 @@ The liquidity is available within a pair of tradeable tokens.
 ## Slippage
 The amount the price moves in a trading pair between when a transaction is submitted and when it is executed.
 
-## Swap Fees
-The fees collected upon swapping are rewarded to liquidity providers.
+## Protocol fees
+Fees which liquidity providers are rewarded with. Charged in assets of a pool.
 
 ## Concentrated Liquidity
 The liquidity which is allocated within a determined price range.
