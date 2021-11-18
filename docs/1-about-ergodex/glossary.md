@@ -29,7 +29,7 @@ The automated market-making algorithm used by ErgoDEX, `x*y=c`. where `x` and `y
 ## Liquidity
 Digital assets that are stored in a pool contract and can be traded against by traders.
 
-## Liquidity Provider
+## Liquidity Provider (LP)
 A liquidity provider is someone who deposits tokens into a liquidity pool. Liquidity providers take on price risk and are compensated with trading fees.
 
 ## Pair
