@@ -60,4 +60,4 @@ The amount the price moves in a trading pair between when a transaction is submi
 The fees collected upon swapping are rewarded to liquidity providers.
 
 ## Concentrated Liquidity
-The liquidity which allocated within a determined price range.
+The liquidity which is allocated within a determined price range.
