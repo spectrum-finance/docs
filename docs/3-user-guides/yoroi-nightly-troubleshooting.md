@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import YouTube from 'react-youtube';
+
 # Yoroi Nightly troubleshooting
 
 ## Refresh balances
@@ -18,4 +20,5 @@ Sometimes ErgoDEX may show you wrong balance. That usually occurs after you subm
 
 
 ## Change connected wallet
-// Todo
+
+<YouTube videoId="iHjSHd8n_U4" />
