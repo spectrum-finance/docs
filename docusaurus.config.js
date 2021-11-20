@@ -7,14 +7,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Welcome to the ErgoDex Docs',
-    tagline: 'Dinosaurs are cool',
-    url: 'https://your-docusaurus-test-site.com',
+    tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
+    url: 'https://docs.ergodex.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'ergodex',
+    projectName: 'ergodex-docs',
 
     presets: [
         [
@@ -23,14 +23,12 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+                    editUrl: 'https://github.com/ergolabs/ergodex-docs',
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+                        'https://github.com/ergolabs/ergodex-docs',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -50,19 +48,19 @@ const config = {
                 },
                 items: [
                     {
-                        type: 'doc',
-                        docId: 'intro',
+                        to: '/docs/about-ergodex/intro',
                         position: 'left',
-                        label: 'Protocol',
+                        label: 'Explore ErgoDEX',
                     },
-                    {to: '/blog', label: 'Tech stuff', position: 'left'},
+                    {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
+                    {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
                     {
-                        to: '/blog',
+                        to: '/docs/faq',
                         label: 'FAQ',
                         position: 'right',
                     },
                     {
-                        href: 'https://github.com/ergolabs/ergodex-docs',
+                        href: 'https://github.com/ergolabs',
                         label: 'GitHub',
                         position: 'right',
                     },

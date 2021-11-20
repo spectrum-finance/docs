@@ -1,10 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import HomepageGuides from '../components/HomepageGuides/HomepageGuides';
+import HomepageSocials from "../components/HomepageSocials/HomepageSocials";
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -18,15 +18,18 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`ErgoDex | Documentation`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      description="Description will go into a meta tag in <head />"
+    >
+      <div className={styles.wrapper}>
+        <HomepageHeader />
+        <main>
+          <HomepageGuides />
+          <HomepageSocials />
+        </main>
+      </div>
     </Layout>
   );
 }

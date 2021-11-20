@@ -6,69 +6,90 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #fff;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-color-secondary: #DBDBDB;
-  --ifm-footer-link-hover-color: #ff5135;
-  --ifm-navbar-link-hover-color: #ff5135;
-  --ifm-menu-color-active: #ff5135;
-  --ifm-code-font-size: 95%;
+    --ifm-color-primary: #fff;
+    --ifm-color-primary-dark: rgb(33, 175, 144);
+    --ifm-color-primary-darker: rgb(31, 165, 136);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(70, 203, 174);
+    --ifm-color-primary-lighter: rgb(102, 212, 189);
+    --ifm-color-primary-lightest: rgb(146, 224, 208);
+    --ifm-color-secondary: #DBDBDB;
+    --ifm-tiles-link-hover-color: #ff5135;
+    --ifm-footer-link-hover-color: #ff5135;
+    --ifm-navbar-link-hover-color: #ff5135;
+    --ifm-menu-color-active: #ff5135;
+    --ifm-code-font-size: 95%;
 }
 
 .pagination-nav__label, .theme-edit-this-page {
-  color: #ff5135;
+    color: #ff5135;
+}
+
+.theme-edit-this-page:hover {
+    color: #FF725C;
 }
 
 .pagination-nav__link:hover {
-  border-color: #ff5135;
+    border-color: #ff5135;
 }
 
 html[data-theme='light'] header.hero.hero--primary {
-  color: #262626;
+    color: #262626;
 }
 
 html[data-theme='light'] footer.footer--dark {
-  background: #f0f2f5;
+    background: #f0f2f5;
 }
+
 html[data-theme='light'] footer.footer--dark {
-  --ifm-footer-title-color: #262626;
-  --ifm-footer-link-color: #595959xF
+    --ifm-footer-title-color: #262626;
+    --ifm-footer-link-color: #595959xF
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: #141516;
+    --ifm-color-primary: #141516;
 }
 
 html[data-theme='dark'] header {
-  color: #DBDBDB
+    color: #DBDBDB
 }
+
 html[data-theme='dark'] main {
-  background: var(--ifm-color-primary);
+    background: var(--ifm-color-primary);
 }
+
 html[data-theme='dark'] footer.footer--dark {
-  background: var(--ifm-navbar-background-color);
+    background: var(--ifm-navbar-background-color);
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: #1D1D1D;
+    background-color: #1D1D1D;
 }
 
 .table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
-  color: #ff5135;
+    color: #ff5135;
 }
 
 .navbar__brand, .navbar__logo {
-  margin-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+.theme-doc-markdown a {
+    color: #ff5135;
+    text-decoration: none;
+}
+
+.theme-doc-markdown a:hover, .theme-doc-markdown a:focus {
+    color: #FF725C;
+}
+
+.theme-doc-markdown.markdown img {
+    border-radius: 8px;
 }
