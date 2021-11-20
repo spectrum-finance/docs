@@ -6,6 +6,21 @@
     gap: 1rem;
 }
 
+.guides p {
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    padding-top: 24px;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 14px;
+}
+
 @media (min-width: 668px) {
     .guides {
         grid-template-rows: 1fr;

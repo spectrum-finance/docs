@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import LayoutImage from '../../static/img/layout-image.svg'
 import HomepageGuides from '../components/HomepageGuides/HomepageGuides';
 import HomepageSocials from "../components/HomepageSocials/HomepageSocials";
 
@@ -27,6 +28,7 @@ export default function Home() {
         <HomepageHeader />
         <main>
           <HomepageGuides />
+          <h2 style={{display: 'flex', justifyContent: 'center'}}>Join the community</h2>
           <HomepageSocials />
         </main>
       </div>

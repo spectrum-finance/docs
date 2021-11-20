@@ -73,43 +73,76 @@ const config = {
                         title: 'Docs',
                         items: [
                             {
-                                label: 'Tutorial',
-                                to: '/docs/intro',
+                                label: 'About ErgoDEX',
+                                to: '/docs/about-ergodex/intro',
                             },
+                            {
+                                label: 'Protocol',
+                                to: '/docs/protocol-overview/intro',
+                            },
+                            {
+                                label: 'Quick start',
+                                to: '/docs/user-guides/quick-start',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Ergo Network',
+                        items: [
+                            {
+                                label: 'Contracts',
+                                href: 'https://github.com/ergolabs/ergo-dex',
+                            },
+                            {
+                                label: 'SDK',
+                                href: 'https://github.com/facebook/docusaurus',
+                            },
+                            {
+                                label: 'Bots',
+                                href: 'https://github.com/ergolabs/ergo-dex-backend',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Cardano Network',
+                        items: [
+                            {
+                                label: 'Contracts',
+                                href: 'https://github.com/ergolabs/cardano-dex-contracts',
+                            },
+                            {
+                                label: 'SDK',
+                                href: 'https://github.com/ergolabs/cardano-dex-sdk-haskell',
+                            },
+                            {
+                                label: 'Bots',
+                                href: 'https://github.com/ergolabs/cardano-dex-backend'
+                            }
                         ],
                     },
                     {
                         title: 'Community',
                         items: [
                             {
-                                label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                                label: 'Twitter',
+                                href: 'https://twitter.com/ErgoDex',
+                            },
+                            {
+                                label: 'Telegram',
+                                href: 'https://t.me/ergodex',
                             },
                             {
                                 label: 'Discord',
-                                href: 'https://discordapp.com/invite/docusaurus',
+                                href: 'https://discord.gg/6MFFG4Fn4Y',
                             },
                             {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/docusaurus',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'More',
-                        items: [
-                            {
-                                label: 'Blog',
-                                to: '/blog',
-                            },
-                            {
-                                label: 'GitHub',
-                                href: 'https://github.com/facebook/docusaurus',
+                                label: 'Reddit',
+                                href: 'https://www.reddit.com/r/ergodex/',
                             },
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} ErgoLabs`,
             },
             prism: {
                 theme: lightCodeTheme,

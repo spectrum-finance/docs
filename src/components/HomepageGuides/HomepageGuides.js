@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageGuides.module.css';
 import Link from "@docusaurus/core/lib/client/exports/Link";
+import ExternalArrow from '../../../static/icons/external-arrow.svg'
 
 const Guides = [
   {
@@ -9,8 +10,7 @@ const Guides = [
     link:  'docs/about-ergodex/intro',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explore the first eUTxO DEX on the planet. Learn about the main principles and mission of the project.
       </>
     ),
   },
@@ -19,18 +19,16 @@ const Guides = [
     link: 'docs/user-guides/quick-start',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        aheaad and move your docs into the <code>docs</code> directory.
+          Start you journey in the eUTxO DeFi space. Learn about how to use DEX without pain.
       </>
     ),
   },
   {
-    title: 'Provide liquidity',
+    title: 'Protocol overview',
     link: 'docs/protocol-overview/intro',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Dive in the architecture of the protocol. What is pool, liquidity, swap and many more exciting things.
       </>
     ),
   },
@@ -39,7 +37,8 @@ const Guides = [
 function Guide({Svg, title, description, link}) {
   return (
     <Link isNavLink={true} to={link} className={clsx('col col--4', styles.guide)}>
-      <div className="text--center padding-horiz--md">
+      <div className={clsx('text--center', 'padding-horiz--md', styles.wrapper)}>
+        <ExternalArrow className={styles.arrow} />
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

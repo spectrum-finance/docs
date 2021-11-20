@@ -1,7 +1,7 @@
 .socials {
-    border-top: 1px solid var(--ifm-toc-border-color);
+    /*border-top: 1px solid var(--ifm-toc-border-color);*/
     display: grid;
-    padding: 3rem 1rem 2rem;
+    padding: 1rem 1rem 2rem;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -10,7 +10,7 @@
 @media (min-width: 668px) {
     .socials {
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -37,4 +37,15 @@
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    padding-top: 24px;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 14px;
 }

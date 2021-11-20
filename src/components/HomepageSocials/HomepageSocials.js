@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageSocials.module.css';
 import Link from "@docusaurus/core/lib/client/exports/Link";
+import ExternalArrow from "../../../static/icons/external-arrow.svg";
 
 const TwitterIcon = ({ style }) => {
     const Icon = require('../../../static/img/twitter.svg').default;
@@ -16,43 +17,51 @@ const TwitterIcon = ({ style }) => {
 const Socials = [
   {
     title: 'Twitter',
-    link:  'docs/about-ergodex/intro',
+    link:  'https://twitter.com/ErgoDex',
     Icon:  TwitterIcon,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          Latest project status notifications!
       </>
     ),
   },
   {
     title: 'Telegram',
-    link: 'docs/user-guides/quick-start',
+    link: 'https://t.me/ergodex',
     Icon:  require('../../../static/img/telegram.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        aheaad and move your docs into the <code>docs</code> directory.
+          Get more info about ErgoDEX protocol.
       </>
     ),
   },
   {
     title: 'Discord',
-    link: 'docs/protocol-overview/intro',
+    link: 'https://discord.gg/6MFFG4Fn4Y',
     Icon:  require('../../../static/img/discord.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Discuss features, get support or contact devs.
       </>
     ),
   },
+    {
+        title: 'Reddit',
+        link: 'https://www.reddit.com/r/ergodex/',
+        Icon:  require('../../../static/img/reddit.svg').default,
+        description: (
+            <>
+                Enjoy the subreddit community.
+            </>
+        ),
+    },
 ];
 
 function Guide({Icon, title, description, link}) {
   return (
-    <Link isNavLink={true} to={link} className={clsx('col col--4', styles.social)}>
-      <div className="text--center padding-horiz--md">
+    <Link href={link} target="_blank" className={clsx('col col--4', styles.social)}>
+      <div className={clsx('text--center', 'padding-horiz--md', styles.wrapper)}>
+        <ExternalArrow className={styles.arrow} />
         <h3>{title}</h3>
         <Icon style={{ width: 100, height: 100, margin: '0 auto' }} />
         <p>{description}</p>
