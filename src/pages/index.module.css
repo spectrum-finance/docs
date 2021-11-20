@@ -21,3 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.wrapper {
+  background: var(--ifm-color-primary);
+  padding: 0 max(1rem, calc((100% - 1024px) / 2));
+  margin: 0 auto;
+}
