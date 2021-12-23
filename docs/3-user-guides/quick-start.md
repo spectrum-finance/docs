@@ -10,7 +10,6 @@ guide will describe the process of working with that wallet.
 
 1.2. To install Yoroi Nightly visit the following links in Google Store:
 - [Yoroi Nightly](https://chrome.google.com/webstore/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo): the wallet app;
-- [Yoroi dApp connector](https://chrome.google.com/webstore/detail/yoroi-ergo-dapp-connector/chifollcalpmjdiokipacefnpmbgjnle): app to connect to ErgoDEX 
 
 :::caution Warning
 Note that Yoroi Nightly and Yoroi dApp connector are not a stable version or Yoroi wallet. We are currently working with
