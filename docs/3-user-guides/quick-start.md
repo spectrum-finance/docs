@@ -5,10 +5,10 @@ sidebar_position: 0
 # Quick Start
 
 ## 1. Install wallet
-1.1. First you need to install a wallet. ErgoDEX currently supports only Yoroi Nightly so the 
+1.1. First you need to install a wallet. ErgoDEX currently only supports Yoroi Nightly so the 
 guide will describe the process of working with that wallet.
 
-1.2. To install Yoroi Nightly visit the following links in Google Store:
+1.2. To install Yoroi Nightly visit the following link in Google Store:
 - [Yoroi Nightly](https://chrome.google.com/webstore/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo): the wallet app;
 
 :::caution Warning
