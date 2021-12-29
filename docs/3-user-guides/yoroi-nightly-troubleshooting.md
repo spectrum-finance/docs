@@ -18,6 +18,19 @@ Sometimes ErgoDEX may show you wrong balance. That usually occurs after you subm
 3. Toggle switch twice and leave it "ON"
 ![manage-ex-3](/img/user-guides/yoroi-nightly-troubleshooting/3.png)
 
+## Stuck waiting for pools to load, confirm button says insufficient balance or network connection issues
+
+1. Go to "History" in browser
+
+2. Clear browser cache
+
+3. Open Yoroi Nightly in a new browser tab, then refresh ErgoDEX page
+
+## Transaction submitted but doesn't complete
+
+1. Refund transaction by clicking on clock icon up on top right of page
+
+2. Retry transaction with increased slippage value. A transaction can get stuck when theres low liquidity
 
 ## Change connected wallet
 
