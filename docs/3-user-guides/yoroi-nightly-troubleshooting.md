@@ -18,16 +18,16 @@ Sometimes ErgoDEX may show you wrong balance. That usually occurs after you subm
 3. Toggle switch twice and leave it "ON"
 ![manage-ex-3](/img/user-guides/yoroi-nightly-troubleshooting/3.png)
 
-# Yoroi Nightly syncing issues
+## Yoroi Nightly syncing issues
 
-## UTXO Dust
+### UTXO Dust
 Ergo dust is the small amount of Ergo that remains in a particular wallet or address because the monetary value is so tiny that it is below the amount of the fee required to spend the Ergo. It makes the transaction impossible to process.
 
 Whenever any transaction occurs on the Ergo network, it needs to be validated for authenticity so the transaction can be processed in a reasonable amount of time. Miners validate the transaction and add it to the blockchain network, they are then paid a mining fee for performing this service, this is 0.0011ERG on the Ergo blockchain.
 
 Due to the working mechanism of the blockchain network, at times the mining fee can be higher than the actual amount of the transaction. Ergo dust refers to a Ergo transaction amount where the fee is higher than the transaction amount, making it impossible for the transaction to occur.
 
-In Yoroi, if a wallet has too many UTXO's it can cause syncing issues.
+In Yoroi Nightly, if a wallet has too many UTXO's it can cause syncing issues.
 
 ## Solution
 
