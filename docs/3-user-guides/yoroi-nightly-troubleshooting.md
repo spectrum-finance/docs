@@ -29,7 +29,7 @@ Due to the working mechanism of the blockchain network, at times the mining fee 
 
 In Yoroi Nightly, if a wallet has too many UTXO's it can cause syncing issues.
 
-## Solution
+### Solution
 
 1. Open your wallet in Yoroi Nightly
 
