@@ -17,7 +17,6 @@ ErgoDEX protocol V1 includes 3 types of fees:
 | **Network Fee**           | Paid to Miners or Node stake pools | Native network currency (ERG/ADA) | min - ∞ (user choice)                 |
 | **Protocol Fee (LP fee)** | Fee charged by each specific pool   | Output asset of the operation     | 0-100% (set when the pool is created) |
 | **Execution Fee**         | Paid to execution bots             | Native network currency (ERG/ADA) | [Formula](#execution-fee-formula)     |
-| **UI Fee**                | Paid to UI provider                | Native network currency (ERG/ADA) | 0.01 ERG / 0.4 ADA                    |
 
 :::caution
 The total fee for any operation varies from $0.5 to $5, depending on the rational choice of Nitro (read more
@@ -29,17 +28,17 @@ understand what is going on!
 
 **Execution Fee** is always a range of values (`minExFee - maxExFee`)
 
-`minExFee = minerFee * 1.5`
+`minExFee = minerFee * 3`
 
-`1.5`: constant factor which have to satisfy the condition `minExFee > minerFee`
+`3` is a constant factor which have to satisfy the condition `minExFee > minerFee`
 
-`maxExFee = minExFee * Nitro`
+`maxExFee = minExFee * nitro`
 
-#### What is Nitro?
+#### What is `nitro`?
 **Nitro** is the multiplier of the max execution fee. It is defined in order to give the user the ability to control 
 both the speed order execution and the maximum possible output.
 
-`MaxOutput = maxExFee / exFeePerToken`
+`maxOutput = maxExFee / exFeePerToken`
 
 where
 
