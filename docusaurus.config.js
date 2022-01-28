@@ -23,7 +23,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/ergolabs/ergodex-docs',
+                    editUrl: 'https://github.com/ergolabs/ergodex-docs/tree/master/',
                 },
                 blog: {
                     showReadingTime: true,
