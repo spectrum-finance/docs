@@ -7,9 +7,13 @@ sidebar_position: 2
 ## Introduction
 
 To help protect our users, ErgoDEX is introducing a Liquidity Locker feature.
-This feature can be used by the teams of developers willing to hold an IDO to lock the desired portion of liquidity in the ErgoDEX pool for a desired period. If at the start of an IDO a team decides to lock some significant amount of liquidity of their pool for a reasonable period, it gives confidence to the investors that the locked liquidity stays in the pool until a certain blockchain height (blocks) is reached, creating trust-based relationships between both sides.
+This feature can be used by the teams of developers willing to hold an IDO to lock the desired portion of liquidity in the ErgoDEX pool for a desired period.
 
 Liquidity Locking is a widely used practice in IDOs on DEX's like Uniswap where developers can use a separate application such as Unicrypt to lock their liquidity. ErgoDEX brings the tool to a new level of convenience. Liquidity Locking is fully integrated into the ErgoDEX UI making ErgoDEX a first class platform for IDOs.
+
+## Why lock liquidity
+
+If at the start of an IDO a team decides to lock some significant amount of liquidity of their pool for a reasonable period, it gives confidence to the investors that the locked liquidity stays in the pool until a certain blockchain height (blocks) is reached, creating trust-based relationships between both sides.
 
 ### 1. Lock Liquidity
 
