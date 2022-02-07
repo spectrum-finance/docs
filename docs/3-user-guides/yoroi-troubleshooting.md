@@ -1,24 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 import YouTube from 'react-youtube';
 
-# Yoroi Nightly troubleshooting
+# Yoroi troubleshooting
 
-## Refresh balances
-Sometimes ErgoDEX may show you wrong balance. That usually occurs after you submit any operation. To fix that:
-
-1. Go the "Manage Extensions" in Google Chrome browser
-
-![manage-ex-1](/img/user-guides/yoroi-nightly-troubleshooting/1.png) ![manage-ex-2](/img/user-guides/yoroi-nightly-troubleshooting/2.png)
-
-2. Find Yoroi Nightly
-
-3. Toggle switch twice and leave it "ON"
-![manage-ex-3](/img/user-guides/yoroi-nightly-troubleshooting/3.png)
-
-## Yoroi Nightly syncing issues
+## Yoroi syncing issues
 
 ### UTXO Dust
 Ergo dust is the small amount of Ergo that remains in a particular wallet or address because the monetary value is so tiny that it is below the amount of the fee required to spend the Ergo. It makes the transaction impossible to process.
@@ -27,33 +15,32 @@ Whenever any transaction occurs on the Ergo network, it needs to be validated fo
 
 Due to the working mechanism of the blockchain network, at times the mining fee can be higher than the actual amount of the transaction. Ergo dust refers to a Ergo transaction amount where the fee is higher than the transaction amount, making it impossible for the transaction to occur.
 
-In Yoroi Nightly, if a wallet has too many UTXO's it can cause syncing issues.
+In Yoroi, if a wallet has too many UTXO's it can cause syncing issues.
 
 ### Solution
 
-1. Open your wallet in Yoroi Nightly
+1. Open your wallet in Yoroi
 
 2. Go to receive tab and find your wallet address and copy it
-![manage-ex-8](/img/user-guides/yoroi-nightly-troubleshooting/8.png)
+![manage-ex-8](/img/user-guides/yoroi-troubleshooting/1.png)
 3. Go to send tab and make the receiver your personal wallet address you previously copied.
 
 4. At the bottom of the page, click on the dropdown menu titled "amount options" and select "Send all ERG + all tokens"
-![manage-ex-9](/img/user-guides/yoroi-nightly-troubleshooting/9.png)
+![manage-ex-9](/img/user-guides/yoroi-troubleshooting/2.png)
 Doing this, will collect all the unusable tiny UTXO's in your wallet and combine them into one single UTXO so when you connect your wallet to the DEX, there is way less syncing time needed.
 
 ## Stuck waiting for pools to load, confirm button says insufficient balance or network connection issues
 
 1. Go to "History" in browser  
-![manage-ex-4](/img/user-guides/yoroi-nightly-troubleshooting/4.png)
+![manage-ex-4](/img/user-guides/yoroi-troubleshooting/3.png)
 2. Clear browser cache  
-![manage-ex-5](/img/user-guides/yoroi-nightly-troubleshooting/5.png)
-3. Open Yoroi Nightly in a new browser tab, then refresh ErgoDEX page  
-![manage-ex-6](/img/user-guides/yoroi-nightly-troubleshooting/6.png)
+![manage-ex-5](/img/user-guides/yoroi-troubleshooting/4.png)
+3. Open Yoroi in a new browser tab, then refresh ErgoDEX page  
 
 ## Transaction submitted but doesn't complete
 
 1. Refund transaction by clicking on clock icon up on top right of page and click on pending transaction
-![manage-ex-7](/img/user-guides/yoroi-nightly-troubleshooting/7.png)
+![manage-ex-7](/img/user-guides/yoroi-troubleshooting/6.png)
 2. Retry transaction with increased slippage value. A transaction can get stuck when theres low liquidity
 
 ## Change connected wallet
