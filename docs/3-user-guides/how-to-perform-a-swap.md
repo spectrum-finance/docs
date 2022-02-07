@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
-# ErgoDEX Perform Swap
+# How to Perform a Swap
 
 1. First head to the main DEX page https://app.ergodex.io/swap.
 
