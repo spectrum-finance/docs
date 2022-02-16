@@ -4,14 +4,14 @@ sidebar_position: 5
 
 # Analytics
 
-
-ErgoDEX has a growing munber of analytics available to show the user how productive a pool is. This will be added to frequently going forward, the purpose of this article is to expplain the currewnt analytics avaiable.
+ErgoDEX has a growing number of analytics available to show the user how productive a pool is. This will be added to frequently going forward, the purpose of this article is to explain the current analytics available.
 
 
 ## Pool overview
 
 Here you can see all the pool position overview page. Almost all analytics can be seen from here.
-![Pool postion screen](/img/protocol-overview/analytics/1.png)
+![Pool position screen](/img/protocol-overview/analytics/1.png)
+
 
 ### TVL
 

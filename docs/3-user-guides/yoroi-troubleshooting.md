@@ -1,10 +1,9 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-import YouTube from 'react-youtube';
-
 # Yoroi troubleshooting
+<!-- import YouTube from 'react-youtube'; -->
 
 ## Yoroi syncing issues
 
