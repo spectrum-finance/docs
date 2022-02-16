@@ -2,10 +2,10 @@
 sidebar_position: 0
 ---
 
-# Quick Start
+# Yoroi Quick Start
 
 ## 1. Install wallet
-1.1. First you need to install a wallet. ErgoDEX supports Yoroi wallet.
+1.1. First you need to install the Yoroi wallet. You will need to disable any other wallet extensions such as Nautilus or SAFEW. Then clear browser cache and refresh page.
 
 1.2. To install Yoroi visit the following link in Google Store:
 - [Yoroi](https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb?hl=en): the wallet app;
@@ -22,7 +22,7 @@ sidebar_position: 0
 
 ![Yoroi click wallet](/img/user-guides/quick-start/3.png)
 
-2.4. Type wallet name (on your choice) and wallet spending password:
+2.4. Type wallet name (of your choice) and wallet spending password:
 ![Yoroi click wallet](/img/user-guides/quick-start/4.png)
 
 2.5. Record a recovery phrase in a safe place! This phrase is the only way to restore your wallet!
