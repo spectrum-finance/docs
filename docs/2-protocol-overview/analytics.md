@@ -30,5 +30,21 @@ These fees are what contribute to the liquidity pool to ensure liquidity provide
 
 ### Yearly Fees
 
-This is a dynamic % value that will let someone calculate their liquidity pool gains. This will change according to volume of swaps in the pool.
+This is a dynamic % value that will let someone calculate their liquidity pool gains. This will change according to volume of swaps in the pool. See below example.
 
+We will create a test pool scenario. Lets say ERG/sigUSD, below are the pool stats.
+
+Liquidity: $500k
+Volume 24H: $100k
+
+Calculate yearly fees
+Use the 24H volume to calculate the fee share of liquidity providers in the pool (based on the 0.4% trading fee structure):
+$100,000*0.4/100 = $400
+
+Next, use that fee share to estimate the projected yearly fees earned by the pool (based on the current 24h volume):
+$400*365 = $146,000
+
+### APR
+
+We can now use the yearly fees to calculate the LP rewards APR: That's yearly fees divided by liquidity:
+($146,000/$500,000)*100 = 29.2% LP reward APR

@@ -3,7 +3,6 @@ sidebar_position: 6
 ---
 
 # Yoroi troubleshooting
-import YouTube from 'react-youtube';
 
 ## Yoroi syncing issues
 
@@ -42,6 +41,3 @@ Doing this, will collect all the unusable tiny UTXO's in your wallet and combine
 ![manage-ex-7](/img/user-guides/yoroi-troubleshooting/6.png)
 2. Retry transaction with increased slippage value. A transaction can get stuck when theres low liquidity
 
-## Change connected wallet
-
-<YouTube videoId="iHjSHd8n_U4" />
