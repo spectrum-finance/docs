@@ -8,7 +8,10 @@ jobs:
       - checkout
       - run:
           name: Deploy
-          command: bash ./deploy.sh
+          command: ${SERVER_CONNECTION_COMMAND} 'source ~/.nvm/nvm.sh; cd /var/www/builds/docs/; git pull origin master; yarn; yarn build'
+      - run:
+          name: Release
+          command: ${SERVER_CONNECTION_COMMAND} 'cp -r /var/www/builds/docs/. /var/www/docs'
 workflows:
   version: 2
   build-and-deploy:
