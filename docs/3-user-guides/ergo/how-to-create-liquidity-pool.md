@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# How to create a liquidity pool
+# How to Create a liquidity pool
 
 1. First head to the main DEX page https://app.ergodex.io/pool
 

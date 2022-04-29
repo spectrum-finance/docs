@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# How to add liquidity
+# How to Add liquidity
 
 1. First head to the main DEX page https://app.ergodex.io/pool
 

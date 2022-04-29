@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# How to redeem liquidity
+# How to Redeem liquidity
 
 1. First head to the main DEX page https://app.ergodex.io/pool
 

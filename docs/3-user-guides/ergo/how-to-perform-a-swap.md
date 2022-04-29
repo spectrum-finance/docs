@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# How to Perform a Swap
+# How to perform a Swap
 
 1. First head to the main DEX page https://app.ergodex.io/swap.
 
