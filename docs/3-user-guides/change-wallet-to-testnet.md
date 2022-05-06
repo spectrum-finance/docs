@@ -32,6 +32,12 @@ Before a dapp launches on Cardano, it will initially launch on the Cardano testn
 
 ![Testnet Guide](/img/user-guides/cardano-wallet-testnet/9.png)
 
+## CardWallet
 
+![Testnet Guide](/img/user-guides/cardano-wallet-testnet/10.png)
+
+![Testnet Guide](/img/user-guides/cardano-wallet-testnet/11.png)
+
+![Testnet Guide](/img/user-guides/cardano-wallet-testnet/12.png)
 
 
