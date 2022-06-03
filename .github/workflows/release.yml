@@ -1,0 +1,24 @@
+name: release docs
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  deploy:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          key: ${{secrets.KEY}}
+          script: source ~/.nvm/nvm.sh; cd /var/www/builds/docs/; git pull origin master; yarn; yarn build
+      - name: Release
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          key: ${{secrets.KEY}}
+          script: cp -r /var/www/builds/docs/. /var/www/docs
