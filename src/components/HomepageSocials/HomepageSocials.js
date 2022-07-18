@@ -37,7 +37,7 @@ const Socials = [
   },
   {
     title: 'Discord',
-    link: 'https://discord.gg/6MFFG4Fn4Y',
+    link: 'https://discord.gg/zY2gmTYQVD',
     Icon:  require('../../../static/img/discord.svg').default,
     description: (
       <>
