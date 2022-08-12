@@ -13,7 +13,7 @@
 html[data-theme='light'] {
     --spectrum-primary-color: #6b64cd;
     --spectrum-primary-color-hover: #8c85ef;
-    --ifm-color-primary: linear-gradient(180deg, #CDC9FE 0%, #FFFFFF 100%);
+    --ifm-color-primary: linear-gradient(180deg, rgba(205, 201, 254, .2) 0%, #FFFFFF 100%);
     --ifm-heading-color: #262626;
     --ifm-color-secondary: #DBDBDB;
     --ifm-toc-border-color: rgba(34, 29, 103, 0.2);
@@ -134,7 +134,8 @@ html[data-theme='dark'] .theme-doc-markdown a:hover, html[data-theme='dark'] .th
     color: #5c53a8;
 }
 
-.themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module.themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module {
+.themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module.themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module,
+.themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module.themedImage--light_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module {
     width: 142px;
     margin-right: 16px;
 }
