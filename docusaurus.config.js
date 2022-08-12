@@ -13,7 +13,7 @@ const config = {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.svg',
-    organizationName: 'spectrum.DEX',
+    organizationName: 'Spectrum Labs, Inc',
     projectName: 'spectrum-dex-docs',
 
     presets: [
@@ -145,7 +145,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Spectrum`,
+                copyright: `Copyright © ${new Date().getFullYear()} Spectrum Labs, Inc`,
             },
             prism: {
                 theme: lightCodeTheme,
