@@ -29,7 +29,7 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`ErgoDex | Documentation`}
+      title={`Spectrum | Documentation`}
       description="Description will go into a meta tag in <head />"
     >
       <Glow />

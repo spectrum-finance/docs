@@ -24,7 +24,7 @@ An act of reclaiming liquidity which was provided to a liquidity pool earlier pl
 Cancellation of an order which hasn't been yet settled.
 
 ## Constant Product Formula
-The automated market-making algorithm used by ErgoDEX, `x*y=c`. where `x` and `y` are deposits on tokens X and Y respectively and c is their product which has to remain constant after swap operations. CFMMs provide liquidity across the entire price range.
+The automated market-making algorithm used by Spectrum.DEX, `x*y=c`. where `x` and `y` are deposits on tokens X and Y respectively and c is their product which has to remain constant after swap operations. CFMMs provide liquidity across the entire price range.
 
 ## Liquidity
 Digital assets that are stored in a pool contract and can be traded against by traders.

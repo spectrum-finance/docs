@@ -13,7 +13,7 @@ Mining is a process used in Proof of Work cryptocurrencies to create blocks that
 ### Create a wallet
 
 To begin mining, a user will first need a wallet. This is covered in this separate detailed guide. 
-https://docs.ergodex.io/docs/user-guides/nautilus-quick-start
+https://docs.spectrum.fi/docs/user-guides/nautilus-quick-start
 
 ### Mining setup
 

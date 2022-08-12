@@ -6,11 +6,11 @@ sidebar_position: 4
 
 :::caution
 
-This article may contain temporary information and applies only to the ErgoDEX V1
+This article may contain temporary information and applies only to the Spectrum.DEX V1
 
 :::
 
-ErgoDEX protocol V1 includes 3 types of fees:
+Spectrum.DEX protocol V1 includes 3 types of fees:
 
 | Fee                       | Assignment                         | Unit                              | Amount                                |
 | ------------------------- | ---------------------------------- | --------------------------------- | ------------------------------------- |
