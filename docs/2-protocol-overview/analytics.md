@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Analytics
 
-ErgoDEX has a growing number of analytics available to show the user how productive a pool is. This will be added to frequently going forward, the purpose of this article is to explain the current analytics available.
+Spectrum.DEX has a growing number of analytics available to show the user how productive a pool is. This will be added to frequently going forward, the purpose of this article is to explain the current analytics available.
 
 ## Pool overview
 

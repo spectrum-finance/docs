@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # How to Perform a Swap
 
-1. First head to the main DEX page https://app.ergodex.io/swap.
+1. First head to the main DEX page https://app.spectrum.fi/swap.
 
 2. Once on the swap page, you will then need to choose what assets you will like to swap. You can select different assets from the dropdown menus as can be seen below. 
 ![Swap](/img/user-guides/swap/1.png)

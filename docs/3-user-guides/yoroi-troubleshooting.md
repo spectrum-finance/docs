@@ -33,7 +33,7 @@ Doing this, will collect all the unusable tiny UTXO's in your wallet and combine
 ![manage-ex-4](/img/user-guides/yoroi-troubleshooting/3.png)
 2. Clear browser cache  
 ![manage-ex-5](/img/user-guides/yoroi-troubleshooting/4.png)
-3. Open Yoroi in a new browser tab, then refresh ErgoDEX page  
+3. Open Yoroi in a new browser tab, then refresh Spectrum.DEX page  
 
 ## Transaction submitted but doesn't complete
 

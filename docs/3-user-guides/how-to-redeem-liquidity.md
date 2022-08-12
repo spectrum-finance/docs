@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # How to redeem liquidity
 
-1. First head to the main DEX page https://app.ergodex.io/pool
+1. First head to the main DEX page https://app.spectrum.fi/pool
 
 2. To redeem liquidity, select the “Your Positions” tab, then select the pool you would like to redeem from.
 ![Liquidity Locker](/img/user-guides/withdraw-liquidity/1.png)

@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Welcome to the ErgoDex Docs',
+    title: 'Welcome to the Spectrum.DEX Docs',
     tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
-    url: 'https://docs.ergodex.io',
+    url: 'https://docs.spectrum.fi',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
-    organizationName: 'ergodex',
-    projectName: 'ergodex-docs',
+    favicon: 'img/favicon.svg',
+    organizationName: 'Spectrum Labs, Inc',
+    projectName: 'spectrum-dex-docs',
 
     presets: [
         [
@@ -31,7 +31,10 @@ const config = {
                         'https://github.com/ergolabs/ergodex-docs',
                 },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: [
+                        require.resolve('./src/css/custom.css'),
+                        require.resolve('./src/css/fonts/fonts.css')
+                    ],
                 },
             }),
         ],
@@ -48,9 +51,9 @@ const config = {
                 },
                 items: [
                     {
-                        to: '/docs/about-ergodex/intro',
+                        to: '/docs/about-spectrumdex/intro',
                         position: 'left',
-                        label: 'Explore ErgoDEX',
+                        label: 'Explore Spectrum.DEX',
                     },
                     {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
                     {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
@@ -73,8 +76,8 @@ const config = {
                         title: 'Docs',
                         items: [
                             {
-                                label: 'About ErgoDEX',
-                                to: '/docs/about-ergodex/intro',
+                                label: 'About Spectrum.DEX',
+                                to: '/docs/about-spectrumdex/intro',
                             },
                             {
                                 label: 'Protocol',
@@ -142,7 +145,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} ErgoLabs`,
+                copyright: `Copyright © ${new Date().getFullYear()} Spectrum Labs, Inc`,
             },
             prism: {
                 theme: lightCodeTheme,

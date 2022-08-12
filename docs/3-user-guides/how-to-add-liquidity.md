@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # How to add liquidity
 
-1. First head to the main DEX page https://app.ergodex.io/pool
+1. First head to the main DEX page https://app.spectrum.fi/pool
 
 2. The user then needs select “Add Liquidity”.
 ![Liquidity Locker](/img/user-guides/add-liquidity/1.png)

@@ -44,9 +44,9 @@ Get some ERG on one of the following exchanges ([list of available exchanges](ht
 ### 3.2. Get test assets
 Just visit [Ergo Faucet](https://ergofaucet.org/) and follow suggested steps.
 
-## 4. Connect wallet to ErgoDEX
+## 4. Connect wallet to Spectrum.DEX
 
-4.1. Go to [app.ergodex.io](https://app.ergodex.io)
+4.1. Go to [app.spectrum.fi](https://app.spectrum.fi)
 
 4.2. Click connect wallet button
 
@@ -60,7 +60,7 @@ Just visit [Ergo Faucet](https://ergofaucet.org/) and follow suggested steps.
 
 ![Nautilus wallet screen](/img/user-guides/quick-start-nautilus/8.png)
 
-4.3. Congrats! Now you are ready to start use ErgoDEX! Your ERG balance will appear here!
+4.3. Congrats! Now you are ready to start use Spectrum.DEX! Your ERG balance will appear here!
 
 ![Nautilus wallet screen](/img/user-guides/quick-start-nautilus/9.png)
 

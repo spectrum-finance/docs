@@ -6,10 +6,10 @@ sidebar_position: 5
 
 ## Introduction
 
-To help protect our users, ErgoDEX is introducing a Liquidity Locker feature.
-This feature can be used by the teams of developers willing to hold an IDO to lock the desired portion of liquidity in the ErgoDEX pool for a desired period.
+To help protect our users, Spectrum.DEX is introducing a Liquidity Locker feature.
+This feature can be used by the teams of developers willing to hold an IDO to lock the desired portion of liquidity in the Spectrum.DEX pool for a desired period.
 
-Liquidity Locking is a widely used practice in IDOs on DEX's like Uniswap where developers can use a separate application such as Unicrypt to lock their liquidity. ErgoDEX brings the tool to a new level of convenience. Liquidity Locking is fully integrated into the ErgoDEX UI making ErgoDEX a first class platform for IDOs.
+Liquidity Locking is a widely used practice in IDOs on DEX's like Uniswap where developers can use a separate application such as Unicrypt to lock their liquidity. Spectrum.DEX brings the tool to a new level of convenience. Liquidity Locking is fully integrated into the ErgoDEX UI making ErgoDEX a first class platform for IDOs.
 
 ## Why lock liquidity
 
@@ -19,7 +19,7 @@ If at the start of an IDO a team decides to lock some significant amount of liqu
 
 Below are the sequnce of steps a project will need to follow in order to lock liquidity in a liquidity pool.
 
-1. Go to https://app.ergodex.io/pool, then go to "your positions" tab and select the pool you would like to lock liquidity in.
+1. Go to https://app.spectrum.fi/pool, then go to "your positions" tab and select the pool you would like to lock liquidity in.
 ![Liquidity Locker](/img/user-guides/liquidity-locker/1.png)
 
 2. Once you have selected your pool, click on the 3 dots on the top right of the popup and select "lock liquidity".
@@ -35,7 +35,7 @@ Below are the sequnce of steps a project will need to follow in order to lock li
 
 Once you have locked liquidity into a pool, you have the option to relock liquidity. This will allow the user to extend the lock date, you cannot make the time shorter.
 
-1. Go to https://app.ergodex.io/pool, then go to "your positions" tab and select the pool you would like to lock liquidity in.
+1. Go to https://app.spectrum.fi/pool, then go to "your positions" tab and select the pool you would like to lock liquidity in.
 ![Liquidity Locker](/img/user-guides/liquidity-locker/1.png)
 
 2. Once you have selected your pool, click on the 3 dots on the top right of the popup and select "Relock liquidity".
@@ -51,7 +51,7 @@ Once you have locked liquidity into a pool, you have the option to relock liquid
 
 Once the date has arrived that was selected in the lock liquidity transaction. The user will need to go to withdraw funds from the pool.
 
-1. Go to https://app.ergodex.io/pool, then go to "your positions" tab and select the pool you would like to lock liquidity in.
+1. Go to https://app.spectrum.fi/pool, then go to "your positions" tab and select the pool you would like to lock liquidity in.
 ![Liquidity Locker](/img/user-guides/liquidity-locker/1.png)
 
 2. Once you have selected your pool, click on the 3 dots on the top right of the popup and select "Withdrawal".

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # How to create a liquidity pool
 
-1. First head to the main DEX page https://app.ergodex.io/pool
+1. First head to the main DEX page https://app.spectrum.fi/pool
 
 2. The user then needs to click on down arrow on "Add liquidity" button and select create pool.
 
@@ -14,7 +14,7 @@ sidebar_position: 3
 
 ![Liquidity Pool](/img/user-guides/create-liquidity-pool/2.png)
 
-4. The user now has a few parameters they need to set. The fee tier, which is the cost of transacting with the pool, more information can be found here https://docs.ergodex.io/docs/protocol-overview/analytics.
+4. The user now has a few parameters they need to set. The fee tier, which is the cost of transacting with the pool, more information can be found here https://docs.spectrum.fi.io/docs/protocol-overview/analytics.
 
 5. Next a price must be configured. To do this, enter a value in and this will be the price of the first token compared to the second token.
 
@@ -26,7 +26,7 @@ sidebar_position: 3
 
 ![Liquidity Pool](/img/user-guides/create-liquidity-pool/4.png)
 
-8. A first Nautilus dapp connector window will now popup and the user will need the sign the first transaction. Once this is confirmed, a second window will popup and this will also need to be signed. After this, the pool is created, and LP tokens will be sent to the users wallet and the pool will be visible on ErgoDEX once the transactions have confirmed!
+8. A first Nautilus dapp connector window will now popup and the user will need the sign the first transaction. Once this is confirmed, a second window will popup and this will also need to be signed. After this, the pool is created, and LP tokens will be sent to the users wallet and the pool will be visible on Spectrum.DEX once the transactions have confirmed!
 
 ![Liquidity Pool](/img/user-guides/create-liquidity-pool/5.png)
 

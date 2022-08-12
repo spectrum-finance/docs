@@ -6,8 +6,8 @@ import ExternalArrow from '../../../static/icons/external-arrow.svg'
 
 const Guides = [
   {
-    title: 'About ErgoDEX',
-    link:  'docs/about-ergodex/intro',
+    title: 'About Spectrum.DEX',
+    link:  'docs/about-spectrumdex/intro',
     description: (
       <>
         Explore the first eUTxO DEX on the planet. Learn about the main principles and mission of the project.
