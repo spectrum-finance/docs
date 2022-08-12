@@ -17,7 +17,7 @@ const TwitterIcon = ({ style }) => {
 const Socials = [
   {
     title: 'Twitter',
-    link:  'https://twitter.com/ErgoDex',
+    link:  'https://twitter.com/Spectrumlabs',
     Icon:  TwitterIcon,
     description: (
       <>
@@ -27,7 +27,7 @@ const Socials = [
   },
   {
     title: 'Telegram',
-    link: 'https://t.me/ergodex',
+    link: 'https://t.me/spectrum_labs_community',
     Icon:  require('../../../static/img/telegram.svg').default,
     description: (
       <>
@@ -37,7 +37,7 @@ const Socials = [
   },
   {
     title: 'Discord',
-    link: 'https://discord.gg/zY2gmTYQVD',
+    link: 'https://discord.com/invite/zY2gmTYQVD',
     Icon:  require('../../../static/img/discord.svg').default,
     description: (
       <>
@@ -47,7 +47,7 @@ const Socials = [
   },
     {
         title: 'Reddit',
-        link: 'https://www.reddit.com/r/ergodex/',
+        link: 'https://www.reddit.com/r/SpectrumLabs/',
         Icon:  require('../../../static/img/reddit.svg').default,
         description: (
             <>
