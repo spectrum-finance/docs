@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Welcome to the ErgoDex Docs',
+    title: 'Welcome to the Spectrum Docs',
     tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
     url: 'https://docs.ergodex.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon.svg',
     organizationName: 'ergodex',
     projectName: 'ergodex-docs',
 
@@ -31,7 +31,10 @@ const config = {
                         'https://github.com/ergolabs/ergodex-docs',
                 },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: [
+                        require.resolve('./src/css/custom.css'),
+                        require.resolve('./src/css/fonts/fonts.css')
+                    ],
                 },
             }),
         ],

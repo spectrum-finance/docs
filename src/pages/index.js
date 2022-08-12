@@ -3,9 +3,17 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import LayoutImage from '../../static/img/layout-image.svg'
 import HomepageGuides from '../components/HomepageGuides/HomepageGuides';
 import HomepageSocials from "../components/HomepageSocials/HomepageSocials";
+import Prism from './prism.svg';
+
+function Glow() {
+  return (
+      <div className={styles.glow}>
+        <Prism />
+      </div>
+  )
+}
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -24,6 +32,7 @@ export default function Home() {
       title={`ErgoDex | Documentation`}
       description="Description will go into a meta tag in <head />"
     >
+      <Glow />
       <div className={styles.wrapper}>
         <HomepageHeader />
         <main>
