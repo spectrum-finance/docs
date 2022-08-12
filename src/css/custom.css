@@ -135,7 +135,9 @@ html[data-theme='dark'] .theme-doc-markdown a:hover, html[data-theme='dark'] .th
 }
 
 .themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module.themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module,
-.themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module.themedImage--light_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module {
+.themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module.themedImage--light_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module,
+.themedImage_1VuW.themedImage--light_3UqQ,
+.themedImage_1VuW.themedImage--dark_hz6m{
     width: 142px;
     margin-right: 16px;
 }
