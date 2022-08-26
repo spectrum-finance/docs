@@ -98,7 +98,7 @@ const config = {
                             },
                             {
                                 label: 'SDK',
-                                href: 'https://github.com/facebook/docusaurus',
+                                href: 'https://github.com/ergolabs/ergo-dex-sdk-js',
                             },
                             {
                                 label: 'Bots',
