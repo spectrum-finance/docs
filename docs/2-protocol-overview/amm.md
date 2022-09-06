@@ -11,7 +11,7 @@ Each AMM liquidity pool is a trading venue for a pair of assets. In order to fac
 
 ## Constant Function Market Makers (CFMM, classical AMM pools)
 
-Classical AMM pools are based on Constant Product formula which is `x*y=c`, where `x` and `y` are deposits on tokens X and Y respectively and `c` is their product which has to remain constant after swap operations. CFMMs provide liquidity across the entire price range.
+Classical AMM pools are based on Constant Product formula which is `x * y = k`, where `x` and `y` are deposits on tokens X and Y respectively and `k` is their product which has to remain constant after swap operations. CFMMs provide liquidity across the entire price range.
 
 ![crmm](/img/protocol-overview/amm/1.png)
 
