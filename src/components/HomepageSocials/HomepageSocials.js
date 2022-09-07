@@ -17,7 +17,7 @@ const TwitterIcon = ({ style }) => {
 const Socials = [
   {
     title: 'Twitter',
-    link:  'https://twitter.com/Spectrumlabs',
+    link:  'https://twitter.com/spectrumlabs_',
     Icon:  TwitterIcon,
     description: (
       <>
