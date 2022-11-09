@@ -7,7 +7,7 @@ import ExternalArrow from '../../../static/icons/external-arrow.svg'
 const Guides = [
   {
     title: 'About Spectrum Finance',
-    link:  'docs/about-spectrumdex/intro',
+    link:  'docs/about-spectrum-finance/intro',
     description: (
       <>
         Explore the first eUTxO DEX on the planet. Learn about the main principles and mission of the project.

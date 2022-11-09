@@ -51,7 +51,7 @@ const config = {
                 },
                 items: [
                     {
-                        to: '/docs/about-spectrumdex/intro',
+                        to: '/docs/about-spectrum-finance/intro',
                         position: 'left',
                         label: 'Explore Spectrum Finance',
                     },
