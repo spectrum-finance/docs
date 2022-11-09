@@ -16,7 +16,7 @@ Here is how you can participate in it:
    We recommend using [Eternl wallet](https://chrome.google.com/webstore/detail/eternl/kmhcihpebfmpgmihbkipmjlmmioameka) and switching it to the “Preview testnet” network following [this guide](/docs/user-guides/change-wallet-to-testnet#eternl-wallet).
    :::
 
-4. Request test ADA [here](https://docs.cardano.org/cardano-testnet/tools/faucet));
+4. Request test ADA [here](https://docs.cardano.org/cardano-testnet/tools/faucet);
 5. You are ready for testing!
 
 ## Any rewards?
