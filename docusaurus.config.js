@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Welcome to the Spectrum.DEX Docs',
+    title: 'Welcome to the Spectrum Finance Docs',
     tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
@@ -53,7 +53,7 @@ const config = {
                     {
                         to: '/docs/about-spectrumdex/intro',
                         position: 'left',
-                        label: 'Explore Spectrum.DEX',
+                        label: 'Explore Spectrum Finance',
                     },
                     {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
                     {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
@@ -76,8 +76,8 @@ const config = {
                         title: 'Docs',
                         items: [
                             {
-                                label: 'About Spectrum.DEX',
-                                to: '/docs/about-spectrumdex/intro',
+                                label: 'About Spectrum Finance',
+                                to: '/docs/about-spectrum-finance/intro',
                             },
                             {
                                 label: 'Protocol',

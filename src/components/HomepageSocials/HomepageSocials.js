@@ -31,7 +31,7 @@ const Socials = [
     Icon:  require('../../../static/img/telegram.svg').default,
     description: (
       <>
-          Get more info about Spectrum.DEX protocol.
+          Get more info about Spectrum Finance protocol.
       </>
     ),
   },

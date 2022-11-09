@@ -6,7 +6,7 @@ import ExternalArrow from '../../../static/icons/external-arrow.svg'
 
 const Guides = [
   {
-    title: 'About Spectrum.DEX',
+    title: 'About Spectrum Finance',
     link:  'docs/about-spectrumdex/intro',
     description: (
       <>

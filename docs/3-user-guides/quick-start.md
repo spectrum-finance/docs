@@ -5,9 +5,11 @@ sidebar_position: 0
 # Nautilus Quick Start
 
 ## 1. Install wallet
+
 1.1. First you need to install the Nautilus wallet. You will need to disable any other wallet extensions such as Yoroi or SAFEW. Then clear browser cache and refresh page.
 
 1.2. To install Nautilus visit the following link in Google Store:
+
 - [Nautilus](https://chrome.google.com/webstore/detail/nautilus/gjlmehlldlphhljhpnlddaodbjjcchai): the wallet app;
 
 ## 2. Create a wallet
@@ -25,7 +27,7 @@ sidebar_position: 0
 
 2.5. Record a recovery phrase in a safe place! This phrase is the only way to restore your wallet!
 
-2.6. Once confirmed, you will see the screen like following. That means that you've 
+2.6. Once confirmed, you will see the screen like following. That means that you've
 successfully created your wallet. Congrats!
 
 ![Nautilus wallet screen](/img/user-guides/quick-start-nautilus/4.png)
@@ -39,12 +41,13 @@ To get some assets to swap or to provide liquidity first you will need to transf
 ### 3.1. Get real assets
 
 Get some ERG on one of the following exchanges ([list of available exchanges](https://ergoplatform.org/en/exchanges/)) and
-  withdraw them to your Nautilus wallet address.
+withdraw them to your Nautilus wallet address.
 
 ### 3.2. Get test assets
+
 Just visit [Ergo Faucet](https://ergofaucet.org/) and follow suggested steps.
 
-## 4. Connect wallet to Spectrum.DEX
+## 4. Connect wallet to Spectrum Finance
 
 4.1. Go to [app.spectrum.fi](https://app.spectrum.fi)
 
@@ -60,7 +63,6 @@ Just visit [Ergo Faucet](https://ergofaucet.org/) and follow suggested steps.
 
 ![Nautilus wallet screen](/img/user-guides/quick-start-nautilus/8.png)
 
-4.3. Congrats! Now you are ready to start use Spectrum.DEX! Your ERG balance will appear here!
+4.3. Congrats! Now you are ready to start use Spectrum Finance! Your ERG balance will appear here!
 
 ![Nautilus wallet screen](/img/user-guides/quick-start-nautilus/9.png)
-
