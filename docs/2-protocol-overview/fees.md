@@ -15,7 +15,7 @@ Spectrum Finance protocol V1 includes 3 types of fees:
 | Fee                       | Assignment                         | Unit                              | Amount                                |
 | ------------------------- | ---------------------------------- | --------------------------------- | ------------------------------------- |
 | **Network Fee**           | Paid to Miners or Node stake pools | Native network currency (ERG/ADA) | min - ∞ (user choice)                 |
-| **Protocol Fee (LP fee)** | Fee charged by each specific pool  | Output asset of the operation     | 0-100% (set when the pool is created) |
+| **LP fee**                | Fee charged by each specific pool  | Output asset of the operation     | 0-100% (set when a liquidity pool is created) |
 | **Execution Fee**         | Paid to execution bots             | Native network currency (ERG/ADA) | [Formula](#execution-fee-formula)     |
 
 :::caution
