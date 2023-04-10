@@ -146,6 +146,10 @@ html[data-theme='dark'] .theme-doc-markdown a:hover, html[data-theme='dark'] .th
     order: 1;
 }
 
+.menu, .navbar__link {
+    font-weight: var(--ifm-font-weight-bold);
+}
+
 @media (max-width: 996px) {
     .navbar__items {
         justify-content: space-between;
