@@ -1,15 +1,3 @@
-:root {
-    --font-family: 'Space Grotesk';
-    --ifm-code-font-size: 95%;
-    --ifm-border-radius: 4px;
-    --ifm-global-radius: var(--ifm-border-radius);
-    --ifm-tiles-link-hover-color: var(--spectrum-primary-color);
-    --ifm-footer-link-hover-color: var(--spectrum-primary-color);
-    --ifm-navbar-link-hover-color: var(--spectrum-primary-color);
-    --ifm-menu-color-active: var(--spectrum-primary-color);
-    --ifm-link-hover-decoration: none;
-}
-
 html[data-theme='light'] {
     --spectrum-primary-color: #6b64cd;
     --spectrum-primary-color-hover: #8c85ef;
