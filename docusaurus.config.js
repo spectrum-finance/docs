@@ -1,9 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Welcome to the Spectrum Finance Docs',
@@ -128,28 +125,24 @@ const config = {
                         items: [
                             {
                                 label: 'Twitter',
-                                href: 'https://twitter.com/ErgoDex',
+                                href: 'https://twitter.com/Spectrumlabs_',
                             },
                             {
                                 label: 'Telegram',
-                                href: 'https://t.me/ergodex',
+                                href: 'https://t.me/spectrum_labs_community',
                             },
                             {
                                 label: 'Discord',
-                                href: 'https://discord.gg/zY2gmTYQVD',
+                                href: 'https://discord.com/invite/zY2gmTYQVD',
                             },
                             {
                                 label: 'Reddit',
-                                href: 'https://www.reddit.com/r/ergodex/',
+                                href: 'https://www.reddit.com/r/SpectrumLabs/',
                             },
                         ],
                     },
                 ],
                 copyright: `Copyright © ${new Date().getFullYear()} Spectrum Labs, Inc`,
-            },
-            prism: {
-                theme: lightCodeTheme,
-                darkTheme: darkCodeTheme,
             },
         }),
 };
