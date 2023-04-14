@@ -4,55 +4,46 @@
  */
 
 .heroBanner {
-    padding: 4rem 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 966px) {
-    .heroBanner {
-        padding: 2rem;
-    }
+  .heroBanner {
+    padding: 2rem;
+  }
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
-    position: relative;
-    padding: 0 max(1rem, calc((100% - 1024px) / 2));
-    margin: 0 auto;
+  position: relative;
+  padding: 0 max(1rem, calc((100% - 1024px) / 2));
+  margin: 0 auto;
 }
 
 .layoutImage {
-    position: absolute;
-    z-index: 1;
-    opacity: 0.05;
-    width: 100%;
-    height: 100%
+  position: absolute;
+  z-index: 1;
+  opacity: 0.05;
+  width: 100%;
+  height: 100%;
 }
-
 
 .glow {
-    background: var(--ifm-color-primary);
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.glow svg {
-    position: absolute;
-    top: 30px;
-    max-width: 839px;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+  background: var(--ifm-color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.25;
 }

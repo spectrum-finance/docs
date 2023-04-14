@@ -17,29 +17,6 @@ const config = {
   organizationName: "Spectrum Labs, Inc",
   projectName: "spectrum-dex-docs",
 
-  presets: [
-    [
-      "@docusaurus/preset-classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/ergolabs/ergodex-docs/tree/master/",
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/ergolabs/ergodex-docs",
-        },
-        theme: {
-          customCss: [
-            require.resolve("./src/css/custom.css"),
-            require.resolve("./src/css/fonts/fonts.css"),
-          ],
-        },
-      }),
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -50,15 +27,15 @@ const config = {
       },
       navbar: {
         logo: {
-          alt: "Spectrum Logo",
-          src: "img/logo-spectrum.svg",
-          srcDark: "img/logo-spectrum-dark.svg",
+          alt: "Logo",
+          src: "img/logo-light.svg",
+          srcDark: "img/logo-dark.svg",
         },
         items: [
           {
             to: "/docs/about-spectrum-finance/intro",
             position: "left",
-            label: "Explore Spectrum Finance",
+            label: "Explore",
           },
           {
             to: "/docs/protocol-overview/intro",
@@ -165,6 +142,29 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  presets: [
+    [
+      "@docusaurus/preset-classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/ergolabs/ergodex-docs/tree/master/",
+        },
+        blog: {
+          showReadingTime: true,
+          editUrl: "https://github.com/ergolabs/ergodex-docs",
+        },
+        theme: {
+          customCss: [
+            require.resolve("./src/css/custom.css"),
+            require.resolve("./src/css/fonts/fonts.css"),
+          ],
+        },
+      }),
+    ],
+  ],
 };
 
 module.exports = config;
