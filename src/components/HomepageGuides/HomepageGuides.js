@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageGuides.module.css';
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import ExternalArrow from '../../../static/icons/external-arrow.svg'
 
 const Guides = [
   {
@@ -26,7 +25,7 @@ const Guides = [
   },
 ];
 
-function Guide({Svg, title, description, link}) {
+function Guide({ title, description, link}) {
   return (
     <Link isNavLink={true} to={link} className={clsx('col', styles.guide)}>
       <div className={clsx( 'padding-horiz--md', styles.wrapper)}>
