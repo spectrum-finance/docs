@@ -6,25 +6,12 @@ import ExternalArrow from '../../../static/icons/external-arrow.svg'
 
 const Guides = [
   {
-    title: 'About Spectrum Finance',
+    title: (<>What is<br/> Spectrum Finance?</>),
     link:  'docs/about-spectrum-finance/intro',
-    description: (
-      <>
-        Explore the first eUTxO DEX on the planet. Learn about the main principles and mission of the project.
-      </>
-    ),
+    description: "Learn about the core concepts of Spectrum Finance and cross-chain technology",
   },
   {
-    title: 'User guides',
-    link: 'docs/user-guides/quick-start',
-    description: (
-      <>
-          Start you journey in the eUTxO DeFi space. Learn about how to use DEX without pain.
-      </>
-    ),
-  },
-  {
-    title: 'Protocol overview',
+    title: (<>Protocol<br/> overview</>),
     link: 'docs/protocol-overview/intro',
     description: (
       <>
@@ -32,14 +19,18 @@ const Guides = [
       </>
     ),
   },
+  {
+    title: (<>User<br/> guides</>),
+    link: 'docs/user-guides/quick-start',
+    description: "Start you journey in the eUTxO DeFi space. Learn about how to use DEX without pain.",
+  },
 ];
 
 function Guide({Svg, title, description, link}) {
   return (
-    <Link isNavLink={true} to={link} className={clsx('col col--4', styles.guide)}>
-      <div className={clsx('text--center', 'padding-horiz--md', styles.wrapper)}>
-        <ExternalArrow className={styles.arrow} />
-        <h3>{title}</h3>
+    <Link isNavLink={true} to={link} className={clsx('col', styles.guide)}>
+      <div className={clsx( 'padding-horiz--md', styles.wrapper)}>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </Link>

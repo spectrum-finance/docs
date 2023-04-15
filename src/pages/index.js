@@ -1,16 +1,16 @@
 import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
+import OriginalSearchBar from '@theme-original/SearchBar'
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageGuides from "../components/HomepageGuides/HomepageGuides";
 import HomepageSocials from "../components/HomepageSocials/HomepageSocials";
-import GlowLight from "@site/static/img/glow-v2.png";
 
 function Glow() {
   return (
     <div className={styles.glow}>
-      <img src={GlowLight} />
+      <div className={styles.glowImage}/>
     </div>
   );
 }
@@ -36,6 +36,9 @@ export default function Home() {
       <div className={styles.wrapper}>
         <HomepageHeader />
         <main>
+          <div className={styles.search}>
+            <OriginalSearchBar />
+          </div>
           <HomepageGuides />
           <h2 style={{ display: "flex", justifyContent: "center" }}>
             Join the community

@@ -26,12 +26,12 @@ const Socials = [
     ),
   },
   {
-    title: 'Telegram',
+    title: 'Telegram Chat',
     link: 'https://t.me/spectrum_labs_community',
     Icon:  require('../../../static/img/telegram.svg').default,
     description: (
       <>
-          Get more info about Spectrum Finance protocol.
+          Discuss the protocol in Telegram.
       </>
     ),
   },
@@ -59,9 +59,8 @@ const Socials = [
 
 function Guide({Icon, title, description, link}) {
   return (
-    <Link href={link} target="_blank" className={clsx('col col--4', styles.social)}>
+    <Link href={link} target="_blank" className={clsx('col', styles.social)}>
       <div className={clsx('text--center', 'padding-horiz--md', styles.wrapper)}>
-        <ExternalArrow className={styles.arrow} />
         <h3>{title}</h3>
         <Icon style={{ width: 100, height: 100, margin: '0 auto' }} />
         <p>{description}</p>

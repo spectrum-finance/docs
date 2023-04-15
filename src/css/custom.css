@@ -1,7 +1,7 @@
 :root {
     --font-family: 'Space Grotesk';
     --ifm-code-font-size: 95%;
-    --ifm-border-radius: 4px;
+    --ifm-border-radius: 8px;
     --ifm-global-radius: var(--ifm-border-radius);
     --ifm-tiles-link-hover-color: var(--spectrum-primary-color);
     --ifm-footer-link-hover-color: var(--spectrum-primary-color);
@@ -36,6 +36,7 @@ html[data-theme='light'] footer.footer--dark {
     --ifm-footer-title-color: #262626;
     --ifm-footer-link-color: #595959xF;
     background: transparent;
+    backdrop-filter: blur(10px);
     z-index: 1;
 }
 
@@ -43,6 +44,7 @@ html[data-theme='dark'] footer.footer--dark {
     --ifm-footer-title-color: #fff;
     --ifm-footer-link-color: #fff;
     background: transparent;
+    backdrop-filter: blur(10px);
     z-index: 1;
 }
 
@@ -115,6 +117,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .navbar__brand, .navbar__logo {
     margin-right: 0 !important;
+}
+
+.navbar__title {
+    font-size: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .theme-doc-markdown a {

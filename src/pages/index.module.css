@@ -47,3 +47,18 @@
   z-index: 0;
   opacity: 0.25;
 }
+
+.glowImage {
+  background-image: url("@site/static/img/glow-v2.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}

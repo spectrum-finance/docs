@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Welcome to the Spectrum Finance Docs",
+  title: "Spectrum Finance Docs",
   tagline:
     "A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks",
   url: "https://docs.spectrum.fi",
@@ -26,6 +26,7 @@ const config = {
         appId: "PM1ZVMEQRP",
       },
       navbar: {
+        title: 'Spectrum Finance Docs',
         logo: {
           alt: "Logo",
           src: "img/logo-light.svg",
@@ -35,12 +36,26 @@ const config = {
           {
             to: "/docs/about-spectrum-finance/intro",
             position: "left",
-            label: "Explore",
+            label: "Concepts",
           },
           {
-            to: "/docs/protocol-overview/intro",
-            label: "Protocol overview",
+            type: 'dropdown',
+            label: "Protocols",
             position: "left",
+            items: [
+              {
+                label: 'eUTxO AMM',
+                to: '/docs/about-spectrum-finance/glossary',
+              },
+              {
+                label: 'eUTxO Liquidity Mining',
+                to: '/docs/about-spectrum-finance/glossary',
+              },
+              {
+                label: 'Cross-chain network',
+                to: '/docs/about-spectrum-finance/glossary',
+              }
+            ]
           },
           {
             to: "/docs/user-guides/quick-start",
@@ -48,12 +63,7 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/faq",
-            label: "FAQ",
-            position: "right",
-          },
-          {
-            href: "https://github.com/ergolabs",
+            href: "https://github.com/spectrum-finance/docs",
             label: "GitHub",
             position: "right",
           },
@@ -66,11 +76,11 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "About Spectrum Finance",
+                label: "Overview",
                 to: "/docs/about-spectrum-finance/intro",
               },
               {
-                label: "Protocol",
+                label: "Cross-chain",
                 to: "/docs/protocol-overview/intro",
               },
               {
@@ -80,19 +90,19 @@ const config = {
             ],
           },
           {
-            title: "Ergo Network",
+            title: "Ergo AMM",
             items: [
               {
-                label: "Contracts",
-                href: "https://github.com/ergolabs/ergo-dex",
-              },
-              {
-                label: "SDK",
+                label: "JS SDK",
                 href: "https://github.com/ergolabs/ergo-dex-sdk-js",
               },
               {
-                label: "Bots",
+                label: "Off-chain bots",
                 href: "https://github.com/ergolabs/ergo-dex-backend",
+              },
+              {
+                label: "Contracts",
+                href: "https://github.com/ergolabs/ergo-dex",
               },
             ],
           },
@@ -100,16 +110,20 @@ const config = {
             title: "Cardano Network",
             items: [
               {
-                label: "Contracts",
-                href: "https://github.com/ergolabs/cardano-dex-contracts",
-              },
-              {
-                label: "SDK",
+                label: "JS SDK",
                 href: "https://github.com/ergolabs/cardano-dex-sdk-haskell",
               },
               {
-                label: "Bots",
+                label: "Haskell SDK",
+                href: "https://github.com/ergolabs/cardano-dex-sdk-haskell",
+              },
+              {
+                label: "Off-chain bots",
                 href: "https://github.com/ergolabs/cardano-dex-backend",
+              },
+              {
+                label: "Contracts",
+                href: "https://github.com/ergolabs/cardano-dex-contracts",
               },
             ],
           },
@@ -135,7 +149,6 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Spectrum Labs, Inc`,
       },
       prism: {
         theme: lightCodeTheme,
