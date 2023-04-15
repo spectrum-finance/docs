@@ -24,9 +24,10 @@ const config = {
         apiKey: "38bc0b7dd098ab3180f761c798b36827",
         indexName: "spectrum",
         appId: "PM1ZVMEQRP",
+        hell: "hell",
       },
       navbar: {
-        title: 'Spectrum Finance Docs',
+        title: "Spectrum Finance Docs",
         logo: {
           alt: "Logo",
           src: "img/logo-light.svg",
@@ -39,23 +40,23 @@ const config = {
             label: "Concepts",
           },
           {
-            type: 'dropdown',
+            type: "dropdown",
             label: "Protocols",
             position: "left",
             items: [
               {
-                label: 'eUTxO AMM',
-                to: '/docs/about-spectrum-finance/glossary',
+                label: "eUTxO AMM",
+                to: "/docs/about-spectrum-finance/glossary",
               },
               {
-                label: 'eUTxO Liquidity Mining',
-                to: '/docs/about-spectrum-finance/glossary',
+                label: "eUTxO Liquidity Mining",
+                to: "/docs/about-spectrum-finance/glossary",
               },
               {
-                label: 'Cross-chain network',
-                to: '/docs/about-spectrum-finance/glossary',
-              }
-            ]
+                label: "Cross-chain network",
+                to: "/docs/about-spectrum-finance/glossary",
+              },
+            ],
           },
           {
             to: "/docs/user-guides/quick-start",
