@@ -58,11 +58,6 @@ const config = {
                     {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
                     {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
                     {
-                        to: '/docs/faq',
-                        label: 'FAQ',
-                        position: 'right',
-                    },
-                    {
                         href: 'https://github.com/ergolabs',
                         label: 'GitHub',
                         position: 'right',
