@@ -40,11 +40,11 @@ cd ergo-dex-backend
 copy ./config-example.env ./config.env
 ```
 
-There are two values that require modification in the `config.env` file. The first value is the mnemonic, which will be used by the bot to create a wallet for receiving fees and paying miner fees (in SPF fee cases). The section "Generate a proper seed phrase for AMM bots" can help you generate the appropriate address for this purpose. The second value that needs to be updated is the URI of your node. It's worth noting that `localhost/127.0.0.1` may not be accessible from within a docker container, so it's best to use the local LAN IP if the node is running on the same host.
+There are two values that require modification in the `config.env` file. The first value is the mnemonic, which will be used by the bot to create a wallet for receiving fees and paying miner fees (in SPF fee cases). The [Generate seed phrase for bots](#generate-seed-phrase-for-bots) section can help you generate the appropriate address for this purpose. The second value that needs to be updated is the URI of your node. It's worth noting that `localhost/127.0.0.1` may not be accessible from within a docker container, so it's best to use the local LAN IP if the node is running on the same host.
 
 ## Run off-chain bots
 
-Once the `config.env` file is created, make sure you have funds on the expected address (The section ***Generate a proper seed phrase for AMM bots*** will help you to find the proper address). Next, the only thing left to do is to run the containers:
+After creating the `config.env` file, ensure that you have sufficient funds on the anticipated address. You can refer to the section titled [Generate seed phrase for bots](#generate-seed-phrase-for-bots) to locate the appropriate address. Finally, the only remaining step is to launch the containers:
 
 **Linux and macOS:**
 
