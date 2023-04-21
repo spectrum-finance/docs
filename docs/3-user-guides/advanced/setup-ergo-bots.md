@@ -1,55 +1,132 @@
 ---
 sidebar_position: 1
-title: Set up Ergo Bots
+title: Run off-chain bots
 ---
 
-# How to set up execution Bots for Ergo network?
+## Run an Ergo node
 
-## Building & Running the off-chain bots for Ergo network
+The bots require access to an Ergo node, so if you do not have one yet install as instructed here: [Ergo GitHub](https://github.com/ergoplatform/ergo).
 
-### Prerequisites
-The bots require access to an Ergo node, so if you do not have one yet install as instructed here: [Ergo github](https://github.com/ergoplatform/ergo)
-Besides the node the bots depend on tools such as Kafka and Redis to run, to make it easier to manage a docker based solution has been made to allow for easy building and running of the bots.
-The only requirements besides the node are that you have the following installed:
- - GIT to download the code and help fetch updates. [GIT](https://git-scm.com/)
- - SBT (which requires Java) for building the bots. [SBT](https://www.scala-sbt.org/index.html)
- - Docker and Docker-compose (included in Docker for Windows). [Docker](https://www.docker.com/get-started)
+:::caution
+Public node usage makes your chances of winning transaction executions very low! 
+So deploy your own node!
+:::
 
-### Building/updating the bots
-First you need to download the code from the [ergo-dex-backend repo](https://github.com/ergolabs/ergo-dex-backend). The easiest way to keep it updated in the future is by using git:
-```
+In addition to the node, the bots rely on tools like Kafka and Redis to function. To simplify the process of building and running the bots, a docker-based solution has been developed. Apart from the node, the only prerequisites are the installation of the following:
+- [Git](https://git-scm.com/) to download the code and fetch updates.
+- [Docker](https://www.docker.com/get-started) and [docker-compose](https://docs.docker.com/compose/install/).
+
+## Build off-chain bots
+
+First, you need to download the code from this repo. The easiest way to keep it updated in the future is by using git:
+
+```bash
 cd <the folder you want to keep the off-chain bots code in>
-git clone https://github.com/ergolabs/ergo-dex-backend.git
+git clone https://github.com/spectrum-finance/ergo-dex-backend.git
 ```
-Instructions for building the bots are all combined in the build script and the docker-compose.yml file. The only configuration needed for running the bots need to be stored in a file called config.env. An example can be found in config-example.env
-Make a copy of the example file, name it config.env and edit the file to match your values:
-```
+
+All instructions for the containers are specified in the docker-compose.yml file. To run the bots, only configuration settings stored in a file called config.env are needed. An example of this file can be found in config-example.env. To get started, make a copy of the example file, rename it as config.env, and edit the file to reflect your specific values:
+**Linux and macOS:**
+
+```bash
 cd ergo-dex-backend
 cp ./config-example.env ./config.env
 ```
-The 2 values that need to be changed in the config.env file are the address you want to recieve fees on and the URI to your node (localhost/127.0.0.1 might not be accessible from within a docker container, it is best to use the local lan ip if the node is running on the same host).
-Finally the Docker images need to be build before running them:
-```
-./build
-```
-Whenever a new version of the bots is released you will need to run this build command again, followed by the run command described below.
 
-### Running the bots
-Once the Docker images are built the only thing left to do is to run them:
-```
-./run
-```
+**Windows:**
 
-#### Verifying the bots are running correctly
-You can look into the logs of the bots to ensure they are running correctly. To look at a combined log for all bots use the following command:
-
-Windows:
-```
+```bash
 cd ergo-dex-backend
-docker compose logs -f
+copy ./config-example.env ./config.env
 ```
-Linux:
+
+There are two values that require modification in the `config.env` file. The first value is the mnemonic, which will be used by the bot to create a wallet for receiving fees and paying miner fees (in SPF fee cases). The section "Generate a proper seed phrase for AMM bots" can help you generate the appropriate address for this purpose. The second value that needs to be updated is the URI of your node. It's worth noting that `localhost/127.0.0.1` may not be accessible from within a docker container, so it's best to use the local LAN IP if the node is running on the same host.
+
+## Run off-chain bots
+
+Once the `config.env` file is created, make sure you have funds on the expected address (The section ***Generate a proper seed phrase for AMM bots*** will help you to find the proper address). Next, the only thing left to do is to run the containers:
+
+**Linux and macOS:**
+
+```bash
+sudo -E docker-compose up -d
 ```
+
+**Windows:**
+
+```bash
+docker-compose up -d
+```
+
+## Check off-chain bots
+
+You can examine their logs to confirm that the bots are running correctly. To view a consolidated log for all bots, use the following command:
+
+**Linux and macOS:**
+
+```bash
 cd ergo-dex-backend
 sudo docker-compose logs -f
 ```
+
+**Windows:**
+
+```bash
+cd ergo-dex-backend
+docker-compose logs -f
+```
+
+## Update off-chain bots
+
+:::caution
+After running the `git pull` command from the instructions below, make sure to check for potential changes in `config-example.env` to apply to your own `config.env`
+:::
+
+**Linux and macOS:**
+
+```bash
+git pull
+sudo -E docker-compose pull
+sudo -E docker-compose up -d
+```
+
+**Windows:**
+
+```bash
+git pull
+docker-compose pull
+docker-compose up -d
+```
+
+## Generate seed phrase for bots
+
+:::info
+1. The term seed phrase is the same as a mnemonic key or mnemonic phrase.
+2. It's impossible to generate a seed phrase from your address.
+3. Without a seed phrase, you cannot use the address to receive crypto funds.
+4. You can only use the address generated by bots using the seed phrase you provided through [EIP3](https://github.com/ergoplatform/eips/blob/master/eip-0003.md).
+5. Remember to save the seed phrase for each of your wallets. 
+6. It's advisable to create a new wallet specifically for bots instead of using your regular one.
+7. Bots can only access funds from the first address generated from the provided seed phrase using eip3 standard.
+8. It's essential to have all your funds in one address box (ERGs for miner fees), or bots' behavior may be unpredictable.
+:::
+
+### I don't have seed phrase
+
+:::danger
+IT IS RECOMMENDED TO STORE YOUR SEED PHRASE SECURELY, SUCH AS BY WRITING IT DOWN AND AVOIDING ANY FORM OF DIGITAL STORAGE. IF YOU HAPPEN TO LOSE IT, THERE IS NO OTHER WAY TO RESTORE IT.
+:::
+
+1. Generate a new unique seed phrase via wallet (e.g. [nautilus](https://chrome.google.com/webstore/detail/nautilus-wallet/gjlmehlldlphhljhpnlddaodbjjcchai) - just create a new wallet and save seed phrase) or run [HowTo.scala](https://github.com/spectrum-finance/ergo-dex-backend/blob/master/modules/amm-executor/src/test/scala/org/ergoplatfrom/dex/executor/amm/HowTo.scala), check line **`Seed phrase is:`** and save seed phrase (24 words) from stdout.
+2. Deposit funds to exactly the address you see in **`Address is:`** line in stdout.
+3. Put your seed phrase into the `config.env` file and run bots.
+
+### I have seed phrase
+
+:::danger
+DON'T USE YOUR REGULAR HOT WALLET, ALWAYS GENERATE NEW ONE TO RUN OFF-CHAIN BOTS
+:::
+
+1. It is important to make sure that you have sufficient funds on the same address that the bot will use. The bot will always utilize the first address from your wallet, which is generated using EIP3. To verify this, you can open the [HowTo.scala](https://github.com/spectrum-finance/ergo-dex-backend/blob/master/modules/amm-executor/src/test/scala/org/ergoplatfrom/dex/executor/amm/HowTo.scala) file, enter your seed phrase into the `val seedPhrase` variable, and run the script.
+2. Check the address printed in the output. If the address matches the one that holds the required funds, then you can use this seed phrase for the bots. Otherwise, you should transfer your funds to the required address as displayed in the script's output.
+3. After putting your seed phrase into the config file, you can run the bots.
