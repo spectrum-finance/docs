@@ -20,22 +20,23 @@ In addition to the node, the bots rely on tools like Kafka and Redis to function
 
 First, you need to download the code from this repo. The easiest way to keep it updated in the future is by using git:
 
-```bash
+```
 cd <the folder you want to keep the off-chain bots code in>
 git clone https://github.com/spectrum-finance/ergo-dex-backend.git
 ```
 
 All instructions for the containers are specified in the docker-compose.yml file. To run the bots, only configuration settings stored in a file called config.env are needed. An example of this file can be found in config-example.env. To get started, make a copy of the example file, rename it as config.env, and edit the file to reflect your specific values:
+
 **Linux and macOS:**
 
-```bash
+```
 cd ergo-dex-backend
 cp ./config-example.env ./config.env
 ```
 
 **Windows:**
 
-```bash
+```
 cd ergo-dex-backend
 copy ./config-example.env ./config.env
 ```
@@ -48,13 +49,13 @@ After creating the `config.env` file, ensure that you have sufficient funds on t
 
 **Linux and macOS:**
 
-```bash
+```
 sudo -E docker-compose up -d
 ```
 
 **Windows:**
 
-```bash
+```
 docker-compose up -d
 ```
 
@@ -64,14 +65,14 @@ You can examine their logs to confirm that the bots are running correctly. To vi
 
 **Linux and macOS:**
 
-```bash
+```
 cd ergo-dex-backend
 sudo docker-compose logs -f
 ```
 
 **Windows:**
 
-```bash
+```
 cd ergo-dex-backend
 docker-compose logs -f
 ```
@@ -84,7 +85,7 @@ After running the `git pull` command from the instructions below, make sure to
 
 **Linux and macOS:**
 
-```bash
+```
 git pull
 sudo -E docker-compose pull
 sudo -E docker-compose up -d
@@ -92,7 +93,7 @@ sudo -E docker-compose up -d
 
 **Windows:**
 
-```bash
+```
 git pull
 docker-compose pull
 docker-compose up -d
