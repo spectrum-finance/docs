@@ -27,7 +27,7 @@ Before running the execution bot or/and deploying a new Yield Farming program, y
 Note that the off-chain bot creates and submits transactions automatically. The Spectrum YF bot application has a sub-command to generate a new key. Just run:
 
 ```bash
-spectrum-deploy-lm-pool generate-new-wallet
+cargo run -p spectrum-deploy-lm-pool generate-new-wallet
 ```
 
 It will print out a BIP-39 mnemonic and its associated Ergo address.
@@ -43,9 +43,9 @@ If you don’t want to run infrastructure for off-chain bots yourself, we can do
 :::
 
 1. Download execution bot binaries from [here](https://github.com/spectrum-finance/spectrum-offchain-ergo/releases) or compile them yourself using this [repository](https://github.com/spectrum-finance/spectrum-offchain-ergo).
-2. Then you need to edit the main config file of the bot `offchain_config.yml`. In the example below, you will find all the necessary information to fill properties of the config file:
+2. Then you need to edit the main config file of the bot `offchain_lm.yml`. In the example below, you will find all the necessary information to fill properties of the config file:
 
-**offchain_config.yml**
+**offchain_lm.yml**
 
 ```yaml
 node_addr: http://213.239.193.208:9053 # Address of ergo node to communicate with
@@ -151,7 +151,7 @@ loggers:
 1. After configuring your YAML files, place them together with the binary in a single directory and run the following command:
 
 ```yaml
-./spectrum-offchain-lm --config-path offchain_config.yml
+./spectrum-offchain-lm --config-path offchain_lm.yml
 ```
 
 🎉Bots are launched and ready to distribute rewards! Let’s deploy our Yield Farming program!
@@ -191,7 +191,7 @@ conf:
 3. Run the deployment command
 
 ```bash
-spectrum-deploy-lm-pool deploy-pool --config-path spectrum-deploy-lm-pool/deploy_pool.yml
+cargo run -p spectrum-deploy-lm-pool deploy-pool --config-path spectrum-deploy-lm-pool/deploy_pool.yml
 ```
 
 The output of this command will display the `program_id`. Make sure to save it, as you will require it for the subsequent step.
