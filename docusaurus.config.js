@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Welcome to the Spectrum Finance Docs',
-    tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
+    tagline: 'A non-custodial, cross-chain decentralised exchange (DEX) powered by multi-chain network Spectrum Network',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -33,7 +33,6 @@ const config = {
                 theme: {
                     customCss: [
                         require.resolve('./src/css/custom.css'),
-                        require.resolve('./src/css/fonts/fonts.css')
                     ],
                 },
             }),

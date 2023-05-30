@@ -6,14 +6,7 @@ import styles from './index.module.css';
 import HomepageGuides from '../components/HomepageGuides/HomepageGuides';
 import HomepageSocials from "../components/HomepageSocials/HomepageSocials";
 import Prism from './prism.svg';
-
-function Glow() {
-  return (
-      <div className={styles.glow}>
-        <Prism />
-      </div>
-  )
-}
+import {Glow} from "@site/src/components/Glow/Glow";
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -30,7 +23,7 @@ export default function Home() {
   return (
     <Layout
       title={`Spectrum | Documentation`}
-      description="Description will go into a meta tag in <head />"
+      description="Learn about Spectrum Finance cross-chain decentralised exchange (DEX)"
     >
       <Glow />
       <div className={styles.wrapper}>
