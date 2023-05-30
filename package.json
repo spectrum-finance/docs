@@ -1,10 +1,11 @@
 {
-  "name": "ergodex-docs",
-  "version": "1.0.0",
+  "name": "@spectrumlabs/docs",
+  "description": "Spectrum Finance documentation",
+  "version": "2.0.0",
   "repository": "git@github.com:ergolabs/ergodex-docs.git",
-  "author": "yashablack <iamyashablack@gmail.com>",
+  "author": "Spectrum Labs",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
