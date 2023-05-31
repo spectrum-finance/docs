@@ -14,15 +14,23 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
+    "@algolia/autocomplete-preset-algolia": "^1.9.2",
+    "@algolia/client-search": "^4.17.1",
+    "@babel/core": "^7.22.1",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.1",
+    "@docusaurus/theme-search-algolia": "^2.4.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
+    "algoliasearch": "^4.17.1",
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-feather": "^2.0.10",
     "react-youtube": "^7.13.1",
     "url-loader": "^4.1.1"
   },

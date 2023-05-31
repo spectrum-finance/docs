@@ -22,12 +22,6 @@
     justify-content: center;
 }
 
-.wrapper {
-    position: relative;
-    padding: 0 max(1rem, calc((100% - 1024px) / 2));
-    margin: 0 auto;
-}
-
 .layoutImage {
     position: absolute;
     z-index: 1;

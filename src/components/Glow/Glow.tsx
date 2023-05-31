@@ -1,11 +1,4 @@
-import styles from "./Glow.module.css";
-import Prism from "./prism.svg";
 import React from "react";
+import styled from "@emotion/styled";
 
-export const Glow = () => {
-    return (
-        <div className={styles.glow}>
-            <Prism />
-        </div>
-    )
-}
+export const Glow = () => <div className="glow" />
