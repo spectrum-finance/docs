@@ -6,16 +6,7 @@ import {HomepageMainTiles} from '@site/src/components/HomepageMainTiles/Homepage
 import {HomepageSocials} from "../components/HomepageSocials/HomepageSocials";
 import {Glow} from "@site/src/components/Glow/Glow";
 import {Divider} from "@site/src/components/Divider/Divider";
-
-const HomepageHeader = () => {
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">Welcome to Spectrum Finance Docs</h1>
-      </div>
-    </header>
-  );
-}
+import OriginalSearchBar from '@theme-original/SearchBar'
 
 export default function Home() {
   return (
@@ -25,7 +16,13 @@ export default function Home() {
     >
       <Glow />
       <div className={styles.wrapper}>
-        <HomepageHeader />
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+          <div className="container">
+            <h1 className="hero__title">Welcome to Spectrum Finance Docs</h1>
+
+          <OriginalSearchBar />
+          </div>
+        </header>
         <main>
           <HomepageMainTiles />
           <Divider />

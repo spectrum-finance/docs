@@ -152,3 +152,24 @@ html[data-theme='dark'] .theme-doc-markdown a:hover, html[data-theme='dark'] .th
     }
 }
 
+html[data-theme=light] .DocSearch {
+    --docsearch-muted-color: var(--ifm-color-emphasis-900);
+    --docsearch-container-background: rgba(94,100,112,.7);
+    --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+    --docsearch-searchbox-focus-background: var(--ifm-color-white);
+    --docsearch-hit-background: var(--ifm-color-white);
+    --docsearch-footer-background: var(--ifm-color-white);
+    --docsearch-searchbox-shadow: none
+}
+
+html[data-theme=dark] .DocSearch {
+    --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+    --docsearch-container-background: rgba(47,55,69,.7);
+    --docsearch-modal-background: var(--ifm-background-color);
+    --docsearch-searchbox-background: var(--ifm-background-color);
+    --docsearch-searchbox-focus-background: var(--ifm-color-black);
+    --docsearch-hit-background: var(--ifm-color-emphasis-100);
+    --docsearch-footer-background: var(--ifm-background-surface-color);
+    --docsearch-key-gradient: linear-gradient(-26.5deg,var(--ifm-color-emphasis-200) 0%,var(--ifm-color-emphasis-100) 100%);
+    --docsearch-searchbox-shadow: inset 0 0 0 2px var(--ifm-color-emphasis-200)
+}
