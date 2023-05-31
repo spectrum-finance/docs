@@ -66,10 +66,11 @@ const config = {
                 //... other Algolia params
             },
             navbar: {
+                title: 'Spectrum Finance Docs',
                 logo: {
-                    alt: 'My Site Logo',
-                    src: 'img/logo-spectrum.svg',
-                    srcDark: 'img/logo-spectrum-dark.svg',
+                    alt: 'Logo',
+                    src: 'img/spectrum-finance-logo-light.svg',
+                    srcDark: 'img/spectrum-finance-logo-dark.svg',
                 },
                 items: [
                     {
