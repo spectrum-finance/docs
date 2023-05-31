@@ -1,19 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageGuides from '../components/HomepageGuides/HomepageGuides';
-import HomepageSocials from "../components/HomepageSocials/HomepageSocials";
-import Prism from './prism.svg';
+import {HomepageMainTiles} from '@site/src/components/HomepageMainTiles/HomepageMainTiles';
+import {HomepageSocials} from "../components/HomepageSocials/HomepageSocials";
 import {Glow} from "@site/src/components/Glow/Glow";
+import {Divider} from "@site/src/components/Divider/Divider";
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+const HomepageHeader = () => {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <h1 className="hero__title">Welcome to Spectrum Finance Docs</h1>
       </div>
     </header>
   );
@@ -22,15 +20,15 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Spectrum | Documentation`}
+      title="Spectrum Finance Docs"
       description="Learn about Spectrum Finance cross-chain decentralised exchange (DEX)"
     >
       <Glow />
       <div className={styles.wrapper}>
         <HomepageHeader />
         <main>
-          <HomepageGuides />
-          <h2 style={{display: 'flex', justifyContent: 'center'}}>Join the community</h2>
+          <HomepageMainTiles />
+          <Divider />
           <HomepageSocials />
         </main>
       </div>

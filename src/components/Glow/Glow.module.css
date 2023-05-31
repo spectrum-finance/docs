@@ -1,6 +1,6 @@
 .glow {
     background: var(--ifm-color-primary);
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     overflow: hidden;
