@@ -1,8 +1,8 @@
 ---
-sidebar_position: 0
+id: overview
+title: What Is Spectrum Finance?
+sidebar_position: 1
 ---
-
-# Introduction
 
 ## What is Spectrum Finance?
 

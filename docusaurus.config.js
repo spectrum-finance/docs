@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -19,23 +18,22 @@ const config = {
     presets: [
         [
             '@docusaurus/preset-classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
-            ({
+            {
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/ergolabs/ergodex-docs/tree/master/',
+                    routeBasePath: '/',
+                    sidebarPath: require.resolve("./sidebars.js"),
+                    editUrl: 'https://github.com/spectrum-finance/docs/tree/main/',
+                    includeCurrentVersion: true,
                 },
                 blog: {
-                    showReadingTime: true,
-                    editUrl:
-                        'https://github.com/ergolabs/ergodex-docs',
+                    path: 'blog/',
+                    blogTitle: 'Engineering Blog',
+                    blogSidebarCount: 0,
                 },
                 theme: {
-                    customCss: [
-                        require.resolve('./src/css/custom.css'),
-                    ],
+                    customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/colors.css')],
                 },
-            }),
+            },
         ],
     ],
 
@@ -66,24 +64,76 @@ const config = {
                 //... other Algolia params
             },
             navbar: {
-                title: 'Spectrum Finance Docs',
+                title: '',
                 logo: {
                     alt: 'Logo',
                     src: 'img/spectrum-finance-logo-light.svg',
                     srcDark: 'img/spectrum-finance-logo-dark.svg',
                 },
                 items: [
+                    // Left side header
                     {
-                        to: '/docs/about-spectrum-finance/intro',
+                        to: '/concepts/overview',
                         position: 'left',
-                        label: 'Explore Spectrum Finance',
+                        label: 'Concepts',
                     },
-                    {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
-                    {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
                     {
-                        href: 'https://github.com/ergolabs',
-                        label: 'GitHub',
+                        to: '/docs/about-spectrum-finance/concepts',
+                        position: 'left',
+                        label: 'Spectrum Network',
+                    },
+                    {
+                        label: 'Cardano AMM',
+                        to: '/cardano-amm/overview',
+                        type: 'dropdown',
+                        position: 'left',
+                        items: [
+                            {
+                                to: '/cardano-amm/ts-sdk',
+                                label: 'TypeScript SDK',
+                            },
+                            {
+                                to: '/cardano-amm/haskell-sdk',
+                                label: 'Haskell SDK',
+                            },
+                            {
+                                to: '/cardano-amm/off-chain-execution',
+                                label: 'Off-chain execution',
+                            },
+                        ]
+                    },
+                    {
+                        label: 'Ergo AMM',
+                        to: '/ergo-amm/overview',
+                        position: 'left',
+                        type: 'dropdown',
+                        items: [
+                            {
+                                to: '/ergo-amm/ts-sdk',
+                                label: 'TypeScript SDK',
+                            },
+                            {
+                                to: '/ergo-amm/launch-yield-farming',
+                                label: 'Launch Yield Farming',
+                            },
+                            {
+                                to: '/ergo-amm/off-chain-execution',
+                                label: 'Off-chain execution',
+                            },
+                        ]
+                    },
+
+                    // Right side header
+                    {
+                        href: 'https://spectrum.fi/spectrum-white-paper.pdf',
                         position: 'right',
+                        label: 'White Paper'
+                    },
+                    {
+                        href: 'https://github.com/spectrum-finance/docs',
+                        position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
                     },
                 ],
             },
