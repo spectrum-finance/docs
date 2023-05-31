@@ -213,7 +213,6 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Spectrum Labs, Inc`,
             },
             prism: {
                 theme: lightCodeTheme,
