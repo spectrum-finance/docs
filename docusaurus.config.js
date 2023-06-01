@@ -37,188 +37,190 @@ const config = {
         ],
     ],
 
-    themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-        ({
-            algolia: {
-                // The application ID provided by Algolia
-                appId: 'PM1ZVMEQRP',
+    themeConfig: {
+        algolia: {
+            // The application ID provided by Algolia
+            appId: 'PM1ZVMEQRP',
 
-                // Public API key: it is safe to commit it
-                apiKey: 'c988cb79470522922539697deb7367cd',
+            // Public API key: it is safe to commit it
+            apiKey: 'c988cb79470522922539697deb7367cd',
 
-                indexName: 'spectrum',
+            indexName: 'spectrum',
 
-                // Optional: see doc section below
-                contextualSearch: true,
+            // Optional: see doc section below
+            contextualSearch: true,
 
-                // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-                // externalUrlRegex: 'external\\.com|domain\\.com',
+            // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+            // externalUrlRegex: 'external\\.com|domain\\.com',
 
-                // Optional: Algolia search parameters
-                searchParameters: {},
+            // Optional: Algolia search parameters
+            searchParameters: {},
 
-                // Optional: path for search page that enabled by default (`false` to disable it)
-                searchPagePath: 'search',
+            // Optional: path for search page that enabled by default (`false` to disable it)
+            searchPagePath: 'search',
 
-                //... other Algolia params
+            //... other Algolia params
+        },
+        announcementBar: {
+            id: 'announcementBar-2', // Increment on change
+            content: `⚠️ Note that the cross-chain solution is in progress. For updates, visit <a target="_blank" rel="noopener noreferrer" href="https://github.com/spectrum-finance/spectrum">GitHub</a> or join <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/SpectrumLabs_">Twitter</a>`,
+        },
+        navbar: {
+            title: '',
+            logo: {
+                alt: 'Logo',
+                src: 'img/spectrum-finance-logo-light.svg',
+                srcDark: 'img/spectrum-finance-logo-dark.svg',
             },
-            navbar: {
-                title: '',
-                logo: {
-                    alt: 'Logo',
-                    src: 'img/spectrum-finance-logo-light.svg',
-                    srcDark: 'img/spectrum-finance-logo-dark.svg',
+            items: [
+                // Left side header
+                {
+                    to: '/concepts/overview',
+                    position: 'left',
+                    label: 'Concepts',
                 },
-                items: [
-                    // Left side header
-                    {
-                        to: '/concepts/overview',
-                        position: 'left',
-                        label: 'Concepts',
-                    },
-                    {
-                        to: '/docs/about-spectrum-finance/concepts',
-                        position: 'left',
-                        label: 'Spectrum Network',
-                    },
-                    {
-                        label: 'Cardano AMM',
-                        to: '/cardano-amm/overview',
-                        type: 'dropdown',
-                        position: 'left',
-                        items: [
-                            {
-                                to: '/cardano-amm/ts-sdk',
-                                label: 'TypeScript SDK',
-                            },
-                            {
-                                to: '/cardano-amm/haskell-sdk',
-                                label: 'Haskell SDK',
-                            },
-                            {
-                                to: '/cardano-amm/off-chain-execution',
-                                label: 'Off-chain execution',
-                            },
-                        ]
-                    },
-                    {
-                        label: 'Ergo AMM',
-                        to: '/ergo-amm/overview',
-                        position: 'left',
-                        type: 'dropdown',
-                        items: [
-                            {
-                                to: '/ergo-amm/ts-sdk',
-                                label: 'TypeScript SDK',
-                            },
-                            {
-                                to: '/ergo-amm/launch-yield-farming',
-                                label: 'Launch Yield Farming',
-                            },
-                            {
-                                to: '/ergo-amm/off-chain-execution',
-                                label: 'Off-chain execution',
-                            },
-                        ]
-                    },
+                {
+                    to: '/docs/about-spectrum-finance/concepts',
+                    position: 'left',
+                    label: 'Spectrum Network',
+                },
+                {
+                    label: 'Cardano AMM',
+                    to: '/cardano-amm/overview',
+                    type: 'dropdown',
+                    position: 'left',
+                    items: [
+                        {
+                            to: '/cardano-amm/ts-sdk',
+                            label: 'TypeScript SDK',
+                        },
+                        {
+                            to: '/cardano-amm/haskell-sdk',
+                            label: 'Haskell SDK',
+                        },
+                        {
+                            to: '/cardano-amm/off-chain-execution',
+                            label: 'Off-chain execution',
+                        },
+                    ]
+                },
+                {
+                    label: 'Ergo AMM',
+                    to: '/ergo-amm/overview',
+                    position: 'left',
+                    type: 'dropdown',
+                    items: [
+                        {
+                            to: '/ergo-amm/ts-sdk',
+                            label: 'TypeScript SDK',
+                        },
+                        {
+                            to: '/ergo-amm/launch-yield-farming',
+                            label: 'Launch Yield Farming',
+                        },
+                        {
+                            to: '/ergo-amm/off-chain-execution',
+                            label: 'Off-chain execution',
+                        },
+                    ]
+                },
 
-                    // Right side header
-                    {
-                        href: 'https://spectrum.fi/spectrum-white-paper.pdf',
-                        position: 'right',
-                        label: 'White Paper'
-                    },
-                    {
-                        href: 'https://github.com/spectrum-finance/docs',
-                        position: 'right',
-                        className: 'header-github-link',
-                        'aria-label': 'GitHub repository',
-                    },
-                ],
-            },
-            footer: {
-                style: 'dark',
-                links: [
-                    {
-                        title: 'Docs',
-                        items: [
-                            {
-                                label: 'About Spectrum Finance',
-                                to: '/docs/about-spectrum-finance/intro',
-                            },
-                            {
-                                label: 'Protocol',
-                                to: '/docs/protocol-overview/intro',
-                            },
-                            {
-                                label: 'Quick start',
-                                to: '/docs/user-guides/quick-start',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Ergo Network',
-                        items: [
-                            {
-                                label: 'Contracts',
-                                href: 'https://github.com/ergolabs/ergo-dex',
-                            },
-                            {
-                                label: 'SDK',
-                                href: 'https://github.com/ergolabs/ergo-dex-sdk-js',
-                            },
-                            {
-                                label: 'Bots',
-                                href: 'https://github.com/ergolabs/ergo-dex-backend',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Cardano Network',
-                        items: [
-                            {
-                                label: 'Contracts',
-                                href: 'https://github.com/ergolabs/cardano-dex-contracts',
-                            },
-                            {
-                                label: 'SDK',
-                                href: 'https://github.com/ergolabs/cardano-dex-sdk-haskell',
-                            },
-                            {
-                                label: 'Bots',
-                                href: 'https://github.com/ergolabs/cardano-dex-backend'
-                            }
-                        ],
-                    },
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/ErgoDex',
-                            },
-                            {
-                                label: 'Telegram',
-                                href: 'https://t.me/ergodex',
-                            },
-                            {
-                                label: 'Discord',
-                                href: 'https://discord.gg/zY2gmTYQVD',
-                            },
-                            {
-                                label: 'Reddit',
-                                href: 'https://www.reddit.com/r/ergodex/',
-                            },
-                        ],
-                    },
-                ],
-            },
-            prism: {
-                theme: lightCodeTheme,
-                darkTheme: darkCodeTheme,
-            },
-        }),
+                // Right side header
+                {
+                    href: 'https://spectrum.fi/spectrum-white-paper.pdf',
+                    position: 'right',
+                    label: 'White Paper'
+                },
+                {
+                    href: 'https://github.com/spectrum-finance/docs',
+                    position: 'right',
+                    className: 'header-github-link',
+                    'aria-label': 'GitHub repository',
+                },
+            ],
+        },
+        footer: {
+            style: 'dark',
+            links: [
+                {
+                    title: 'Docs',
+                    items: [
+                        {
+                            label: 'About Spectrum Finance',
+                            to: '/docs/about-spectrum-finance/intro',
+                        },
+                        {
+                            label: 'Protocol',
+                            to: '/docs/protocol-overview/intro',
+                        },
+                        {
+                            label: 'Quick start',
+                            to: '/docs/user-guides/quick-start',
+                        },
+                    ],
+                },
+                {
+                    title: 'Ergo Network',
+                    items: [
+                        {
+                            label: 'Contracts',
+                            href: 'https://github.com/ergolabs/ergo-dex',
+                        },
+                        {
+                            label: 'SDK',
+                            href: 'https://github.com/ergolabs/ergo-dex-sdk-js',
+                        },
+                        {
+                            label: 'Bots',
+                            href: 'https://github.com/ergolabs/ergo-dex-backend',
+                        },
+                    ],
+                },
+                {
+                    title: 'Cardano Network',
+                    items: [
+                        {
+                            label: 'Contracts',
+                            href: 'https://github.com/ergolabs/cardano-dex-contracts',
+                        },
+                        {
+                            label: 'SDK',
+                            href: 'https://github.com/ergolabs/cardano-dex-sdk-haskell',
+                        },
+                        {
+                            label: 'Bots',
+                            href: 'https://github.com/ergolabs/cardano-dex-backend'
+                        }
+                    ],
+                },
+                {
+                    title: 'Community',
+                    items: [
+                        {
+                            label: 'Twitter',
+                            href: 'https://twitter.com/ErgoDex',
+                        },
+                        {
+                            label: 'Telegram',
+                            href: 'https://t.me/ergodex',
+                        },
+                        {
+                            label: 'Discord',
+                            href: 'https://discord.gg/zY2gmTYQVD',
+                        },
+                        {
+                            label: 'Reddit',
+                            href: 'https://www.reddit.com/r/ergodex/',
+                        },
+                    ],
+                },
+            ],
+        },
+        prism: {
+            theme: lightCodeTheme,
+            darkTheme: darkCodeTheme,
+        },
+    },
 };
 
 module.exports = config;

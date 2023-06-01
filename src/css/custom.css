@@ -17,6 +17,8 @@ html[data-theme='light'] {
     --ifm-heading-color: #262626;
     --ifm-color-secondary: #DBDBDB;
     --ifm-toc-border-color: rgba(34, 29, 103, 0.2);
+    --site-announcement-bar-stripe-color1: hsla(232, 68%, 85%, 0.7);
+    --site-announcement-bar-stripe-color2: hsla(247, 68%, 95%, 0.81);
 }
 
 html[data-theme='dark'] {
@@ -26,6 +28,8 @@ html[data-theme='dark'] {
     --ifm-heading-color: #fff;
     --ifm-color-primary: linear-gradient(180deg, rgba(84, 0, 255, 0.1) 0%, #000000 100%);
     --ifm-navbar-background-color: #141414;
+    --site-announcement-bar-stripe-color1: hsla(260, 58%, 51%, 0.79);
+    --site-announcement-bar-stripe-color2: hsla(248, 65%, 35%, 0.86);
 }
 
 html[data-theme='light'] footer.footer--dark {
@@ -208,4 +212,14 @@ html[data-theme=dark] .glow {
 
 h3 {
     font-size: 18px;
+}
+
+div[class^=announcementBar_] {
+    background: repeating-linear-gradient(35deg,var(--site-announcement-bar-stripe-color1),var(--site-announcement-bar-stripe-color1) 20px,var(--site-announcement-bar-stripe-color2) 10px,var(--site-announcement-bar-stripe-color2) 40px);
+    font-weight: var(--ifm-font-weight-bold);
+    color: var(--ifm-heading-color);
+}
+
+div[class^=announcementBar_] .close {
+    color: var(--ifm-heading-color);
 }
