@@ -1,63 +1,55 @@
 import React from 'react';
 
-import {TwoRow} from "@site/src/components/Raw/Raw";
+import {TwoRow} from "@site/src/components/Row/Row";
 import styled from "@emotion/styled";
 import {InternalLinkTile} from "@site/src/components/InternalLinkTile/InternalLinkTile";
 import {Link} from "react-feather";
+import {FlexColumn} from "@site/src/components/FlexColumn/FlexColumn";
 
 const ergoIntegrations = [
     {
-        title: 'Ergo TypeScript SDK quick start',
+        title: 'Ergo TypeScript SDK Quick Start',
         to: '/concepts/overview',
     },
     {
-        title: 'Ergo AMM protocol analytics API',
+        title: 'Ergo AMM Analytics API',
         to: '/concepts/overview',
     },
 ]
 
 const cardanoIntegrations = [
     {
-        title: 'Cardano TypeScript SDK quick start',
+        title: 'Cardano TypeScript SDK Quick Start',
         to: '/concepts/overview',
     },
     {
-        title: 'Haskell SDK quick start',
+        title: 'Haskell SDK Quick Start',
         to: '/concepts/overview',
     },
     {
-        title: 'Cardano AMM protocol analytics API',
+        title: 'Cardano AMM Analytics API',
         to: '/concepts/overview',
     },
 ]
-
-const Flex = styled.div`
-  display: flex;
-  flex-direction: column;
-  
-  a:not(:last-child) {
-    margin-bottom: 8px;
-  }
-`
 
 export const HomepageProtocolIntegrations = () => {
     return (
         <section>
             <TwoRow>
-                <Flex>
+                <FlexColumn>
                     <h2>Integrate your Cardano App</h2>
                     <p>Explore these guided tutorials to get started integrating with Spectrum Finance Cardano AMM in your App or dApp</p>
                     {cardanoIntegrations.map((props, idx) => (
                         <InternalLinkTile key={idx} {...props} />
                     ))}
-                </Flex>
-                <Flex>
+                </FlexColumn>
+                <FlexColumn>
                     <h2>Integrate your Ergo App</h2>
                     <p>Explore these guided tutorials to get started integrating with Spectrum Finance Ergo AMM in your App or dApp</p>
                     {ergoIntegrations.map((props, idx) => (
                         <InternalLinkTile key={idx} {...props} />
                     ))}
-                </Flex>
+                </FlexColumn>
             </TwoRow>
         </section>
     );
