@@ -1,7 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import styles from './index.module.css';
 import {HomepageActions} from '@site/src/components/HomepageActions/HomepageActions';
 import {HomepageSocials} from "../components/HomepageSocials/HomepageSocials";
 import {Glow} from "@site/src/components/Glow/Glow";
