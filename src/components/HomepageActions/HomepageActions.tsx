@@ -1,7 +1,7 @@
 import React from 'react';
 import {Book, Globe} from 'react-feather'
 import {TwoRow} from "@site/src/components/Row/Row";
-import {InternalLinkActionTile} from "@site/src/components/InternalLinkActionTile/InternalLinkActionTile";
+import {InternalLinkActionTile} from "@site/src/components/LinkTile/InternalLinkActionTile";
 
 const actions = [
     {

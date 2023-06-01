@@ -8,25 +8,25 @@ const socialsData = [
    {
         title: 'Twitter',
         link:  'https://twitter.com/spectrumlabs_',
-        Icon:  require('../../../static/img/twitter.svg').default,
+        Icon:  require('../../../static/icons/twitter-mark.svg').default,
         description: 'Latest project status notifications!',
    },
    {
         title: 'Telegram',
         link: 'https://t.me/spectrum_labs_community',
-        Icon:  require('../../../static/img/telegram.svg').default,
+        Icon:  require('../../../static/icons/telegram-mark.svg').default,
         description: 'Get more info about Spectrum Finance protocol.',
    },
    {
         title: 'Discord',
         link: 'https://discord.com/invite/zY2gmTYQVD',
-        Icon:  require('../../../static/img/discord.svg').default,
+        Icon:  require('../../../static/icons/discord-mark.svg').default,
         description: 'Discuss features, get support or contact devs.',
     },
     {
         title: 'Reddit',
         link: 'https://www.reddit.com/r/SpectrumLabs/',
-        Icon:  require('../../../static/img/reddit.svg').default,
+        Icon:  require('../../../static/icons/reddit-mark.svg').default,
         description: 'Enjoy the subreddit community',
     },
 ];

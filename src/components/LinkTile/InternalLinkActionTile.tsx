@@ -1,5 +1,5 @@
 import React from "react";
-import {InternalLinkTile} from "@site/src/components/InternalLinkTile/InternalLinkTile";
+import {InternalLinkTile} from "@site/src/components/LinkTile/InternalLinkTile";
 import styled from "@emotion/styled";
 
 export const InternalLinkActionTile = styled(InternalLinkTile)`

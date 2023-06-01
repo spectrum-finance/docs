@@ -1,7 +1,7 @@
 import React from 'react';
 import {TwoRow} from "@site/src/components/Row/Row";
 import {FlexColumn} from "@site/src/components/FlexColumn/FlexColumn";
-import {InternalLinkTile} from "@site/src/components/InternalLinkTile/InternalLinkTile";
+import {InternalLinkTile} from "@site/src/components/LinkTile/InternalLinkTile";
 
 const cardanoForProjectsLinks = [
     {

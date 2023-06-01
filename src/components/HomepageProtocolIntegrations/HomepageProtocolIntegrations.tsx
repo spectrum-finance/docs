@@ -2,7 +2,7 @@ import React from 'react';
 
 import {TwoRow} from "@site/src/components/Row/Row";
 import styled from "@emotion/styled";
-import {InternalLinkTile} from "@site/src/components/InternalLinkTile/InternalLinkTile";
+import {InternalLinkTile} from "@site/src/components/LinkTile/InternalLinkTile";
 import {Link} from "react-feather";
 import {FlexColumn} from "@site/src/components/FlexColumn/FlexColumn";
 
