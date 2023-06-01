@@ -4,8 +4,6 @@ title: What Is Spectrum Finance?
 sidebar_position: 1
 ---
 
-## What is Spectrum Finance?
-
 Spectrum Finance is a non-custodial decentralized exchange that allows a quick, effortless, and secure
 transfer of liquidity inside and between the Ergo and Cardano networks. The eUTXO model gives the unique possibility to have shared
 liquidity among different networks. Spectrum Finance will eventually feature a full AMM, Order Book and more.

@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import {Icon} from "react-feather";
+import {Link as LinkIcon, Icon} from "react-feather";
 import styled from "@emotion/styled";
 
 interface TilesProps {
@@ -45,7 +45,7 @@ export const InternalLinkTile: FC<TilesProps> = ({Icon, title, content, to, ...p
     return (
         <LinkTile sensitive={false} isNavLink={true} to={to} {...props}>
             <TitleLine content={content}>
-                {Icon && <Icon />}
+                {Icon ? <Icon /> : <LinkIcon />}
                 <h3>{title}</h3>
             </TitleLine>
             {content && <p>{content}</p>}

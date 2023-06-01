@@ -6,9 +6,8 @@ export const Row = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   justify-content: center;
-  margin: 0 auto;
   padding: 1rem 0;
-  max-width: 960px;
+  max-width: 1024px;
 
   @media (max-width: 960px) {
     grid-template-columns: 1fr;

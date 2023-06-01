@@ -9,12 +9,10 @@ const ergoIntegrations = [
     {
         title: 'Ergo TypeScript SDK quick start',
         to: '/concepts/overview',
-        Icon: Link,
     },
     {
         title: 'Ergo AMM protocol analytics API',
         to: '/concepts/overview',
-        Icon: Link,
     },
 ]
 
@@ -22,17 +20,14 @@ const cardanoIntegrations = [
     {
         title: 'Cardano TypeScript SDK quick start',
         to: '/concepts/overview',
-        Icon: Link,
     },
     {
         title: 'Haskell SDK quick start',
         to: '/concepts/overview',
-        Icon: Link,
     },
     {
         title: 'Cardano AMM protocol analytics API',
         to: '/concepts/overview',
-        Icon: Link,
     },
 ]
 

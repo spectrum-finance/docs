@@ -65,7 +65,7 @@ export default function Home() {
       <Container>
         <HomepageHeader>
             <Title>Welcome to Spectrum Finance Docs</Title>
-            <SubTitle>Your Gateway to Trustless Cross-Chain Trading</SubTitle>
+            <SubTitle>Your Gateway to Trustless Cross-Chain DeFi</SubTitle>
             <HideMedium>
               <OriginalSearchBar />
             </HideMedium>
