@@ -21,6 +21,7 @@ const Container = styled.div`
   margin: 0 auto;
   position: relative;
   padding: 0 max(1rem, calc((100% - 1024px) / 2));
+  padding-bottom: 128px;
 `
 
 const HideMedium = styled.div`

@@ -13,6 +13,7 @@
 html[data-theme='light'] {
     --spectrum-primary-color: #6b64cd;
     --spectrum-primary-color-hover: #8c85ef;
+    --spectrum-footer-background-color: #f3f2ff;
     --ifm-color-primary: linear-gradient(180deg, rgba(205, 201, 254, .2) 0%, #FFFFFF 100%);
     --ifm-heading-color: #262626;
     --ifm-color-secondary: #DBDBDB;
@@ -25,6 +26,7 @@ html[data-theme='dark'] {
     --spectrum-link-hover: #262626;
     --spectrum-primary-color: #7167c5;
     --spectrum-primary-color-hover: #5c53a8;
+    --spectrum-footer-background-color: #070b3b;
     --ifm-heading-color: #fff;
     --ifm-color-primary: linear-gradient(180deg, rgba(84, 0, 255, 0.1) 0%, #000000 100%);
     --ifm-navbar-background-color: #141414;
@@ -32,18 +34,20 @@ html[data-theme='dark'] {
     --site-announcement-bar-stripe-color2: hsla(248, 65%, 35%, 0.86);
 }
 
-html[data-theme='light'] footer.footer--dark {
-    --ifm-footer-title-color: #262626;
-    --ifm-footer-link-color: #595959xF;
-    background: transparent;
+.footer {
+    margin-top: 72px;
+    background: var(--spectrum-footer-background-color);
     z-index: 1;
 }
 
-html[data-theme='dark'] footer.footer--dark {
+html[data-theme='light'] footer {
+    --ifm-footer-title-color: #262626;
+    --ifm-footer-link-color: #595959xF;
+}
+
+html[data-theme='dark'] footer {
     --ifm-footer-title-color: #fff;
     --ifm-footer-link-color: #fff;
-    background: transparent;
-    z-index: 1;
 }
 
 #__docusaurus {
