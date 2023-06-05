@@ -4,16 +4,18 @@ title: What Is Spectrum Finance?
 sidebar_position: 1
 ---
 
-Spectrum Finance is a non-custodial decentralized exchange that allows a quick, effortless, and secure
-transfer of liquidity inside and between the Ergo and Cardano networks. The eUTXO model gives the unique possibility to have shared
-liquidity among different networks. Spectrum Finance will eventually feature a full AMM, Order Book and more.
+To start off, it is important to establish clear differentiations among the various aspects of "Spectrum," as certain
+elements might potentially create confusion for novice users.
 
-Spectrum Finance is an open-source DeFi product which take a part in both Ergo and Cardano platforms and as a
-consequence exists for purposes of both communities. You can imagine Spectrum Finance infrastructure like the following:
-
-- **Spectrum Labs:** the team of developers who are developing and maintaining Spectrum Finance protocol, user interface and other
-  products;
-- **The Spectrum Finance Protocol:** a set of smart contracts that create an automated market maker and order book;
-- **Spectrum Finance User Interface (UI):** a web (or mobile) interface which provides access in conjunction with the protocol;
-- **Spectrum Finance Execution Bots:** off-chain software whose function is to execute DEX orders and works in a completely
-  decentralized manner.
+- **Spectrum Finance:** a brand name of the cross-chain decentralised exchange (DEX);
+- **Spectrum Finance Ergo protocol:** a set of ErgoScript smart-contracts which implement Uniswap v2 like AMM protocol
+  on top of Ergo Layer 1 blockchain;
+- **Spectrum Finance Cardano protocol:** a set of Plutus smart-contracts which implement Uniswap v2 like AMM protocol on
+  top of Cardano Layer 1 blockchain;
+- **Spectrum Finance protocol:** a set of smart-contracts which implement Uniswap v2 like AMM protocol on top of
+  Spectrum Network;
+- **Spectrum Network:** a cross-chain smart-contract platform for building natively cross-chain dApps;
+- **Spectrum Finance User Interface (UI):** a web (or mobile) interface which provides user-friendly access to the
+  protocols;
+- **Spectrum Labs:** the team of developers who are developing and maintaining Spectrum Finance protocols, its
+  components, user interface and other products;

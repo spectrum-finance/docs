@@ -28,6 +28,7 @@ const LinkTile = styled.a`
   &:hover {
     text-decoration: none;
     transform: scale(1.02);
+    border-color: var(--spectrum-primary-color);
   }
 `
 
