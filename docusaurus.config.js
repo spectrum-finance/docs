@@ -81,7 +81,7 @@ const config = {
                     label: 'Concepts',
                 },
                 {
-                    to: '/docs/about-spectrum-finance/concepts',
+                    to: '/concepts/spectrum-network/overview',
                     position: 'left',
                     label: 'Spectrum Network',
                 },
@@ -94,6 +94,7 @@ const config = {
                         {
                             to: '/cardano-amm/ts-sdk',
                             label: 'TypeScript SDK',
+                            new: true,
                         },
                         {
                             to: '/cardano-amm/haskell-sdk',

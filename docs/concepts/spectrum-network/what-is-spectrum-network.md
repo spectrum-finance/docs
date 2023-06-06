@@ -11,8 +11,8 @@ testnet or mainnet.
 
 ## Introduction
 
-Spectrum Network, also referred to as Spectrum Protocol, is a smart contract platform for decentralized and trustless
-cross-chain messaging.
+Spectrum Network, also referred to as Spectrum Protocol, is a smart contract platform for trustless cross-chain
+programmable messaging.
 
 The architecture of Spectrum Network empowers developers to seamlessly interact with native currencies and tokens across
 multiple blockchains simultaneously. This enables them to create decentralized applications (dApps) that operate
