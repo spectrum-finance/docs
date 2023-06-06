@@ -128,7 +128,8 @@ const config = {
 
                 // Right side header
                 {
-                    href: 'https://spectrum.fi/spectrum-white-paper.pdf',
+                    // href: 'https://spectrum.fi/spectrum-white-paper.pdf',
+                    to: '/concepts/spectrum-network/white-paper',
                     position: 'right',
                     label: 'White Paper'
                 },
