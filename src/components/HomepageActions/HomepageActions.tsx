@@ -6,7 +6,7 @@ import {InternalLinkActionTile} from "@site/src/components/LinkTile/InternalLink
 const actions = [
     {
         title: 'What is Spectrum Finance?',
-        content: 'Learn the basics of Spectrum Finance cross-chain DEX, its protocols and roadmap',
+        content: 'Learn the basics of Spectrum Finance cross-chain DEX, its l1-protocols and roadmap',
         Icon: Book,
         to: '/concepts/overview',
     },

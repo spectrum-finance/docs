@@ -24,6 +24,7 @@ const config = {
                     sidebarPath: require.resolve("./sidebars.js"),
                     editUrl: 'https://github.com/spectrum-finance/docs/tree/main/',
                     includeCurrentVersion: true,
+                    showLastUpdateTime: true,
                 },
                 blog: {
                     path: 'blog/',
