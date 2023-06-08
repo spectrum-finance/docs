@@ -1,6 +1,5 @@
 ---
-sidebar_position: 0
-draft: true
+id: ts-sdk
+title: TypeScript SDK
+sidebar_position: 3
 ---
-
-# TypeScript SDK

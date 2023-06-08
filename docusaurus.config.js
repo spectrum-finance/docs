@@ -5,15 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Welcome to the Spectrum Finance Docs',
-    tagline: 'A non-custodial, cross-chain decentralised exchange (DEX) powered by multi-chain network Spectrum Network',
+    title: 'Spectrum Finance',
+    tagline: 'An open-source DEX built on top of trustless cross-chain messaging protocol',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.svg',
-    organizationName: 'Spectrum Labs, Inc',
-    projectName: 'spectrum-dex-docs',
+    projectName: 'spectrum-finance-docs',
 
     presets: [
         [
@@ -22,7 +21,7 @@ const config = {
                 docs: {
                     routeBasePath: '/',
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: 'https://github.com/spectrum-finance/docs/tree/main/',
+                    editUrl: 'https://github.com/spectrum-finance/docs/tree/master/',
                     includeCurrentVersion: true,
                     showLastUpdateTime: true,
                 },
@@ -87,43 +86,50 @@ const config = {
                 },
                 {
                     label: 'Cardano AMM',
-                    to: '/cardano-amm/overview',
+                    to: '/cardano-amm/ts-sdk',
                     type: 'dropdown',
                     position: 'left',
                     items: [
                         {
-                            to: '/cardano-amm/ts-sdk',
-                            label: 'TypeScript SDK',
-                            new: true,
-                        },
-                        {
-                            to: '/cardano-amm/haskell-sdk',
-                            label: 'Haskell SDK',
-                        },
-                        {
-                            to: '/cardano-amm/off-chain-execution',
+                            to: '/cardano-amm/off-chain-execution-bots',
                             label: 'Off-chain execution',
                         },
+                        // {
+                        //     to: '/cardano-amm/analytics-api',
+                        //     label: 'Analytics API',
+                        // },
+                        // {
+                        //     to: '/cardano-amm/ts-sdk',
+                        //     label: 'TypeScript SDK',
+                        // },
+                        // {
+                        //     to: '/cardano-amm/haskell-sdk',
+                        //     label: 'Haskell SDK',
+                        // },
                     ]
                 },
                 {
                     label: 'Ergo AMM',
-                    to: '/ergo-amm/overview',
+                    to: '/ergo-amm/ts-sdk',
                     position: 'left',
                     type: 'dropdown',
                     items: [
                         {
-                            to: '/ergo-amm/ts-sdk',
-                            label: 'TypeScript SDK',
-                        },
-                        {
-                            to: '/ergo-amm/launch-yield-farming',
-                            label: 'Launch Yield Farming',
-                        },
-                        {
-                            to: '/ergo-amm/off-chain-execution',
+                            to: '/ergo-amm/off-chain-execution-bots',
                             label: 'Off-chain execution',
                         },
+                        {
+                            to: '/ergo-amm/analytics-api',
+                            label: 'Analytics API',
+                        },
+                        {
+                            to: '/ergo-amm/for-projects/launch-liquidity-pool',
+                            label: 'For projects',
+                        },
+                        // {
+                        //     to: '/ergo-amm/ts-sdk',
+                        //     label: 'TypeScript SDK',
+                        // },
                     ]
                 },
 

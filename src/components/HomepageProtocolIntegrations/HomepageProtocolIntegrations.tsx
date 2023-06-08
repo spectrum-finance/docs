@@ -6,27 +6,31 @@ import {FlexColumn} from "@site/src/components/FlexColumn/FlexColumn";
 
 const ergoIntegrations = [
     {
-        title: 'Ergo TypeScript SDK Quick Start',
-        to: '/concepts/overview',
+        title: 'Ergo AMM Analytics API',
+        to: '/ergo-amm/analytics-api',
     },
     {
-        title: 'Ergo AMM Analytics API',
-        to: '/concepts/overview',
+        title: 'Ergo AMM TypeScript SDK',
+        to: '/',
+        soon: true,
     },
 ]
 
 const cardanoIntegrations = [
     {
-        title: 'Cardano TypeScript SDK Quick Start',
-        to: '/concepts/overview',
-    },
-    {
-        title: 'Haskell SDK Quick Start',
-        to: '/concepts/overview',
-    },
-    {
         title: 'Cardano AMM Analytics API',
-        to: '/concepts/overview',
+        to: '/',
+        soon: true,
+    },
+    {
+        title: 'Cardano AMM TypeScript SDK',
+        to: '/',
+        soon: true,
+    },
+    {
+        title: 'Haskell SDK',
+        to: '/',
+        soon: true,
     },
 ]
 

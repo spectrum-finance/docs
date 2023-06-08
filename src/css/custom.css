@@ -156,12 +156,12 @@ html[data-theme='dark'] .theme-doc-markdown a:hover, html[data-theme='dark'] .th
 }
 
 .navbar__toggle.clean-btn {
-    order: 1;
+    order: 0;
 }
 
 @media (max-width: 996px) {
-    .navbar__items {
-        justify-content: space-between;
+    .navbar__inner .navbar__brand {
+        display:  none;
     }
 }
 
@@ -252,3 +252,4 @@ article a.breadcrumbs__link:hover {
     background-color: transparent;
     border-bottom: none;
 }
+

@@ -7,9 +7,11 @@ interface TilesProps {
     content?: string;
     Icon?: Icon | ComponentType<SVGProps<SVGSVGElement>>;
     href: string;
+    soon: boolean;
 }
 
-const LinkTile = styled.a`
+const LinkTile = styled.a<{soon: boolean}>`
+  position: relative;
   cursor: pointer;
   border: 1px solid var(--ifm-toc-border-color);
   border-radius: var(--ifm-border-radius);
@@ -23,6 +25,23 @@ const LinkTile = styled.a`
   svg {
     color: var(--spectrum-primary-color);
     margin-right: 8px;
+  }
+
+  &::after {
+    display: ${props => props.soon ? 'block' : 'none'};
+    content: "Soon";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: linear-gradient(71.04deg, rgb(59, 65, 197) 0%, rgb(169, 129, 187) 49%, rgb(255, 124, 50) 100%);
+    padding: 1px 4px;
+    border-radius: 6px;
+    z-index: 9999;
+    transform: rotate(30deg);
   }
 
   &:hover {
@@ -48,13 +67,14 @@ const TitleContainer = styled.div`
 
 const TitleLine = styled.div<TitleLineProps>`
   display: flex;
+  
   align-items: center;
   margin-bottom: ${props => (props.content ? '8px' : '0px')};
 `
 
-export const ExternalLinkTile: FC<TilesProps> = ({Icon, title, content, href, ...props}) => {
+export const ExternalLinkTile: FC<TilesProps> = ({Icon, title, content, href, soon, ...props}) => {
     return (
-        <LinkTile href={href} target="_blank" {...props}>
+        <LinkTile href={href} target="_blank" soon={soon}>
             <TitleContainer>
                 <TitleLine content={content}>
                     {Icon && <Icon />}
