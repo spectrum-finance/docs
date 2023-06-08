@@ -10,7 +10,7 @@ const config = {
     tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'ignore',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.svg',
     organizationName: 'Spectrum Labs, Inc',
