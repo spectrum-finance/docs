@@ -40,7 +40,7 @@ const config = {
     themeConfig: {
         algolia: {
             appId: 'PM1ZVMEQRP',
-            apiKey: 'c988cb79470522922539697deb7367cd',
+            apiKey: 'c4845f3e80f1afb88561078aedc2b99c',
             indexName: 'spectrum',
         },
         announcementBar: {
