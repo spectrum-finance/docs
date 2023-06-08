@@ -9,7 +9,7 @@ const config = {
     tagline: 'An open-source DEX built on top of trustless cross-chain messaging protocol',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
-    onBrokenLinks: 'ignore',
+    onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.svg',
     projectName: 'spectrum-finance-docs',
@@ -31,7 +31,7 @@ const config = {
                     blogSidebarCount: 0,
                 },
                 theme: {
-                    customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/colors.css')],
+                    customCss: require.resolve('./src/css/custom.css'),
                 },
             },
         ],
@@ -39,27 +39,9 @@ const config = {
 
     themeConfig: {
         algolia: {
-            // The application ID provided by Algolia
             appId: 'PM1ZVMEQRP',
-
-            // Public API key: it is safe to commit it
             apiKey: 'c988cb79470522922539697deb7367cd',
-
             indexName: 'spectrum',
-
-            // Optional: see doc section below
-            contextualSearch: true,
-
-            // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-            // externalUrlRegex: 'external\\.com|domain\\.com',
-
-            // Optional: Algolia search parameters
-            searchParameters: {},
-
-            // Optional: path for search page that enabled by default (`false` to disable it)
-            searchPagePath: 'search',
-
-            //... other Algolia params
         },
         announcementBar: {
             id: 'announcementBar-2', // Increment on change
@@ -86,7 +68,6 @@ const config = {
                 },
                 {
                     label: 'Cardano AMM',
-                    to: '/cardano-amm/ts-sdk',
                     type: 'dropdown',
                     position: 'left',
                     items: [
@@ -110,7 +91,6 @@ const config = {
                 },
                 {
                     label: 'Ergo AMM',
-                    to: '/ergo-amm/ts-sdk',
                     position: 'left',
                     type: 'dropdown',
                     items: [
