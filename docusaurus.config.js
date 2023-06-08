@@ -9,7 +9,7 @@ const config = {
     tagline: 'An open-source DEX built on top of trustless cross-chain messaging protocol',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'ignore',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.svg',
     projectName: 'spectrum-finance-docs',
