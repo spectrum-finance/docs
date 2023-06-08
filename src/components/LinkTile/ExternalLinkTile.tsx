@@ -72,7 +72,7 @@ const TitleLine = styled.div<TitleLineProps>`
   margin-bottom: ${props => (props.content ? '8px' : '0px')};
 `
 
-export const ExternalLinkTile: FC<TilesProps> = ({Icon, title, content, href, soon, ...props}) => {
+export const ExternalLinkTile: FC<TilesProps> = ({Icon, title, content, href, soon}) => {
     return (
         <LinkTile href={href} target="_blank" soon={soon}>
             <TitleContainer>

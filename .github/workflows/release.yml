@@ -8,6 +8,11 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: yarn
       - name: Deploy
         uses: appleboy/ssh-action@master
         with:
