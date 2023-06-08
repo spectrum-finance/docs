@@ -1,7 +1,7 @@
 ---
 id: launch-yield-farming
 title: Launch Yield Farming
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::caution

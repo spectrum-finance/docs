@@ -7,7 +7,8 @@ const cardanoForProjectsLinks = [
     {
         title: 'Launch a Liquidity Pool',
         content: 'Establish a liquidity pool to promote unrestricted trading of your Cardano native token',
-        to: '/cardano-amm/for-projects/launch-liquidity-pool',
+        // to: '/cardano-amm/for-projects/launch-liquidity-pool',
+        to: '/',
         soon: true,
     },
     // {
@@ -18,7 +19,8 @@ const cardanoForProjectsLinks = [
     {
         title: 'Whitelist your token',
         content: 'Provide the details about your token to guarantee its visibility to all users within the interface',
-        to: '/cardano-amm/for-projects/token-whitelist',
+        // to: '/cardano-amm/for-projects/token-whitelist',
+        to: '/',
         soon: true,
     },
 ]
@@ -27,7 +29,6 @@ const ergoForProjectsLinks = [
         title: 'Launch a Liquidity Pool',
         content: 'Establish a liquidity pool to promote unrestricted trading of your Ergo native token',
         to: '/ergo-amm/for-projects/launch-liquidity-pool',
-        soon: true,
     },
     {
         title: 'Lock Liquidity',
