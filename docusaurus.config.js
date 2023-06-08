@@ -1,152 +1,158 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Welcome to the Spectrum Finance Docs',
-    tagline: 'A non-custodial, decentralised exchange that allows a quick, effortless and secure transfer of liquidity between the Ergo and Cardano networks',
+    title: 'Spectrum Finance',
+    tagline: 'An open-source DEX built on top of trustless cross-chain messaging protocol',
     url: 'https://docs.spectrum.fi',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.svg',
-    organizationName: 'Spectrum Labs, Inc',
-    projectName: 'spectrum-dex-docs',
+    projectName: 'spectrum-finance-docs',
 
     presets: [
         [
             '@docusaurus/preset-classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
-            ({
+            {
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/ergolabs/ergodex-docs/tree/master/',
+                    routeBasePath: '/',
+                    sidebarPath: require.resolve("./sidebars.js"),
+                    editUrl: 'https://github.com/spectrum-finance/docs/tree/master/',
+                    includeCurrentVersion: true,
+                    showLastUpdateTime: true,
                 },
                 blog: {
-                    showReadingTime: true,
-                    editUrl:
-                        'https://github.com/ergolabs/ergodex-docs',
+                    path: 'blog/',
+                    blogTitle: 'Engineering Blog',
+                    blogSidebarCount: 0,
                 },
                 theme: {
-                    customCss: [
-                        require.resolve('./src/css/custom.css'),
-                        require.resolve('./src/css/fonts/fonts.css')
-                    ],
+                    customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/colors.css')],
                 },
-            }),
+            },
         ],
     ],
 
-    themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-        ({
-            navbar: {
-                logo: {
-                    alt: 'My Site Logo',
-                    src: 'img/logo-spectrum.svg',
-                    srcDark: 'img/logo-spectrum-dark.svg',
+    themeConfig: {
+        algolia: {
+            // The application ID provided by Algolia
+            appId: 'PM1ZVMEQRP',
+
+            // Public API key: it is safe to commit it
+            apiKey: 'c988cb79470522922539697deb7367cd',
+
+            indexName: 'spectrum',
+
+            // Optional: see doc section below
+            contextualSearch: true,
+
+            // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+            // externalUrlRegex: 'external\\.com|domain\\.com',
+
+            // Optional: Algolia search parameters
+            searchParameters: {},
+
+            // Optional: path for search page that enabled by default (`false` to disable it)
+            searchPagePath: 'search',
+
+            //... other Algolia params
+        },
+        announcementBar: {
+            id: 'announcementBar-2', // Increment on change
+            content: `⚠️ Note that the cross-chain solution is in progress. For updates, visit <a target="_blank" rel="noopener noreferrer" href="https://github.com/spectrum-finance/spectrum">GitHub</a> or join <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/SpectrumLabs_">Twitter</a>`,
+        },
+        navbar: {
+            title: '',
+            logo: {
+                alt: 'Logo',
+                src: 'img/spectrum-finance-logo-light.svg',
+                srcDark: 'img/spectrum-finance-logo-dark.svg',
+            },
+            items: [
+                // Left side header
+                {
+                    to: '/concepts/overview',
+                    position: 'left',
+                    label: 'Concepts',
                 },
-                items: [
-                    {
-                        to: '/docs/about-spectrum-finance/intro',
-                        position: 'left',
-                        label: 'Explore Spectrum Finance',
-                    },
-                    {to: '/docs/protocol-overview/intro', label: 'Protocol overview', position: 'left'},
-                    {to: '/docs/user-guides/quick-start', label: 'User guides', position: 'left'},
-                    {
-                        href: 'https://github.com/ergolabs',
-                        label: 'GitHub',
-                        position: 'right',
-                    },
-                ],
-            },
-            footer: {
-                style: 'dark',
-                links: [
-                    {
-                        title: 'Docs',
-                        items: [
-                            {
-                                label: 'About Spectrum Finance',
-                                to: '/docs/about-spectrum-finance/intro',
-                            },
-                            {
-                                label: 'Protocol',
-                                to: '/docs/protocol-overview/intro',
-                            },
-                            {
-                                label: 'Quick start',
-                                to: '/docs/user-guides/quick-start',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Ergo Network',
-                        items: [
-                            {
-                                label: 'Contracts',
-                                href: 'https://github.com/ergolabs/ergo-dex',
-                            },
-                            {
-                                label: 'SDK',
-                                href: 'https://github.com/ergolabs/ergo-dex-sdk-js',
-                            },
-                            {
-                                label: 'Bots',
-                                href: 'https://github.com/ergolabs/ergo-dex-backend',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Cardano Network',
-                        items: [
-                            {
-                                label: 'Contracts',
-                                href: 'https://github.com/ergolabs/cardano-dex-contracts',
-                            },
-                            {
-                                label: 'SDK',
-                                href: 'https://github.com/ergolabs/cardano-dex-sdk-haskell',
-                            },
-                            {
-                                label: 'Bots',
-                                href: 'https://github.com/ergolabs/cardano-dex-backend'
-                            }
-                        ],
-                    },
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/ErgoDex',
-                            },
-                            {
-                                label: 'Telegram',
-                                href: 'https://t.me/ergodex',
-                            },
-                            {
-                                label: 'Discord',
-                                href: 'https://discord.gg/zY2gmTYQVD',
-                            },
-                            {
-                                label: 'Reddit',
-                                href: 'https://www.reddit.com/r/ergodex/',
-                            },
-                        ],
-                    },
-                ],
-                copyright: `Copyright © ${new Date().getFullYear()} Spectrum Labs, Inc`,
-            },
-            prism: {
-                theme: lightCodeTheme,
-                darkTheme: darkCodeTheme,
-            },
-        }),
+                {
+                    to: '/concepts/spectrum-network/overview',
+                    position: 'left',
+                    label: 'Spectrum Network',
+                },
+                {
+                    label: 'Cardano AMM',
+                    to: '/cardano-amm/ts-sdk',
+                    type: 'dropdown',
+                    position: 'left',
+                    items: [
+                        {
+                            to: '/cardano-amm/off-chain-execution-bots',
+                            label: 'Off-chain execution',
+                        },
+                        // {
+                        //     to: '/cardano-amm/analytics-api',
+                        //     label: 'Analytics API',
+                        // },
+                        // {
+                        //     to: '/cardano-amm/ts-sdk',
+                        //     label: 'TypeScript SDK',
+                        // },
+                        // {
+                        //     to: '/cardano-amm/haskell-sdk',
+                        //     label: 'Haskell SDK',
+                        // },
+                    ]
+                },
+                {
+                    label: 'Ergo AMM',
+                    to: '/ergo-amm/ts-sdk',
+                    position: 'left',
+                    type: 'dropdown',
+                    items: [
+                        {
+                            to: '/ergo-amm/off-chain-execution-bots',
+                            label: 'Off-chain execution',
+                        },
+                        {
+                            to: '/ergo-amm/analytics-api',
+                            label: 'Analytics API',
+                        },
+                        {
+                            to: '/ergo-amm/for-projects/launch-liquidity-pool',
+                            label: 'For projects',
+                        },
+                        // {
+                        //     to: '/ergo-amm/ts-sdk',
+                        //     label: 'TypeScript SDK',
+                        // },
+                    ]
+                },
+
+                // Right side header
+                {
+                    // href: 'https://spectrum.fi/spectrum-white-paper.pdf',
+                    to: '/concepts/spectrum-network/white-paper',
+                    position: 'right',
+                    label: 'White Paper'
+                },
+                {
+                    href: 'https://github.com/spectrum-finance/docs',
+                    position: 'right',
+                    className: 'header-github-link',
+                    'aria-label': 'GitHub repository',
+                },
+            ],
+        },
+        prism: {
+            theme: lightCodeTheme,
+            darkTheme: darkCodeTheme,
+        },
+    },
 };
 
 module.exports = config;
