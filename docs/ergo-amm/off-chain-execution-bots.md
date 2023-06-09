@@ -119,7 +119,6 @@ docker-compose up -d
 ## Generate seed phrase for bots
 
 :::info
-
 1. The term seed phrase is the same as a mnemonic key or mnemonic phrase.
 2. It's impossible to generate a seed phrase from your address.
 3. Without a seed phrase, you cannot use the address to receive crypto funds.
@@ -130,7 +129,7 @@ docker-compose up -d
 7. Bots can only access funds from the first address generated from the provided seed phrase using eip3 standard.
 8. It's essential to have all your funds in one address box (ERGs for miner fees), or bots' behavior may be
    unpredictable.
-   :::
+:::
 
 ### I don't have seed phrase
 

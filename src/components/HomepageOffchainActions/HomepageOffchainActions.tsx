@@ -9,13 +9,14 @@ const actions = [
         title: 'Become a Cardano DEX Off-chain Operator',
         content: 'Learn how to start executing Cardano AMM orders and earn execution fees from each swap',
         Icon: Server,
-        to: '/concepts/overview',
+        to: '/cardano-amm/off-chain-execution-bots',
+        soon: true,
     },
     {
         title: 'Become an Ergo DEX Off-chain Operator',
         content: 'Learn how to start executing Ergo AMM orders and earn execution fees from each swap',
         Icon: Server,
-        to: '/concepts/spectrum-network/overview',
+        to: '/ergo-amm/off-chain-execution-bots',
     },
 ]
 
