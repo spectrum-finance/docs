@@ -66,14 +66,16 @@ Completing these steps will result in the compilation of the off-chain service.
 
 The off-chain service uses a private key wrapped in a cipher container. To create this container, you can use a special
 tool called wallet-helper (the link to the tool will be available after merging the branch with the documentation and
-the tool into the master). This tool will assist you in creating a ciphered container from the skey file. To use the
+the tool into the master). This tool will help you create a cyphered container from the `.skey` file. To use the
 tool, follow these steps:
+
+**If you compiled from sources:**  
 
 ```bash
 cabal exec -- wallet-helper Container_Path Private_Key_Path Password 
 ```
 
-More simply:
+**If you will use docker-compose:**  
 
 To retrieve a skey file using the cardano-cli tool, use
 the [key-get command](https://github.com/input-output-hk/cardano-node/blob/master/doc/reference/cardano-node-cli-reference.md/).
@@ -84,7 +86,7 @@ this folder and run the following command:
 docker run -v $(pwd):/testWallet spectrumlabs/spectrum-wallet-helper:0.0.1.0 /testWallet/cypher.json /testWallet/SKEY_FILE_NAME.skey YOUR_PASSWORD_HERE
 ```
 
-It will create cyphered container in “myKeys” director with name cypher.json
+It will create a cyphered container in the “myKeys” director named `cypher.json`.
 
 ### Preparing configuration files
 
