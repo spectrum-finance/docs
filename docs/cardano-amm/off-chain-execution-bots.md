@@ -118,7 +118,7 @@ preconfigured docker-compose configuration. You can clone it directly to your wo
 mkdir -p ~/workDir
 cd ~/workDir
 git clone https://github.com/spectrum-finance/cardano-dex-backend.git
-cd [cardano-dex-backend](https://github.com/spectrum-finance/cardano-dex-backend.git)
+cd cardano-dex-backend
 ```
 
 Configuration file stored under the following path:
