@@ -69,24 +69,27 @@ tool called wallet-helper (the link to the tool will be available after merging 
 the tool into the master). This tool will help you create a cyphered container from the `.skey` file. To use the
 tool, follow these steps:
 
-**If you compiled from sources:**  
+**If you compiled from sources:**
 
 ```bash
 cabal exec -- wallet-helper Container_Path Private_Key_Path Password 
 ```
 
-**If you will use docker-compose:**  
-
+**If you use docker-compose:**  
 To retrieve a skey file using the cardano-cli tool, use
-the [key-get command](https://github.com/input-output-hk/cardano-node/blob/master/doc/reference/cardano-node-cli-reference.md/).
-Create a directory named "myKeys", and copy your secret file into this folder using ctrl+c/ctrl+v. Then, navigate to
+the [key-gen command](https://github.com/input-output-hk/cardano-node/blob/master/doc/reference/cardano-node-cli-reference.md/).
+
+-- TODO: need to add info that cardano-cli is necessary
+-- TODO: need to add commands for key generation
+
+Create a directory named "myKeys", and copy your `.skey` file into this folder. Then, navigate to
 this folder and run the following command:
 
 ```bash
 docker run -v $(pwd):/testWallet spectrumlabs/spectrum-wallet-helper:0.0.1.0 /testWallet/cypher.json /testWallet/SKEY_FILE_NAME.skey YOUR_PASSWORD_HERE
 ```
 
-It will create a cyphered container in the “myKeys” director named `cypher.json`.
+It will create a cyphered container in the `/myKeys` director named `cypher.json`.
 
 ### Preparing configuration files
 
@@ -94,49 +97,42 @@ You can find an example of the configuration with
 comments [here](https://github.com/spectrum-finance/cardano-dex-backend/blob/master/amm-executor/resources/config.dhall)
 
 ### Manual running
+:::caution
+It is recommended executing off-chain service with the Nix environment
+:::
 
 Manual running requires working and fully synced cardano node with exposed node socket file.
 
-1. Configure correct node socket path, valid node config path, and start point (eventSourceConfig.startAt) in the
-   configuration file
-2. You can run the off-chain service by executing the next command
+1. Configure correct node socket path, valid node config path, and start point (`eventSourceConfig.startAt`) in the
+   configuration file "TODO: which config file?"
+2. Run the off-chain service by executing the following command:
 
 ```bash
 cabal exec -- amm-executor-app
 ```
 
-:::caution
-We also recommend executing it with the Nix environment
-:::
-
 ### Docker-compose
 
-The Cardano [dex backend repository](https://github.com/spectrum-finance/cardano-dex-backend) already includes a
-preconfigured docker-compose configuration. You can clone it directly to your working directory.
+:::info
+It is NOT mandatory to run cardano-node separately because it is already included in the `docker-compose.yaml` file.
+:::
+
+The [cardano-dex-backend](https://github.com/spectrum-finance/cardano-dex-backend) repository already includes a
+preconfigured `docker-compose` configuration. To begin, let's clone the repo to your working directory:
 
 ```bash
-mkdir -p ~/workDir
-cd ~/workDir
+mkdir -p ~/spectrum-finance
+cd ~/spectrum-finance
 git clone https://github.com/spectrum-finance/cardano-dex-backend.git
 cd cardano-dex-backend
 ```
 
-Configuration file stored under the following path:
+The primary configuration file for off-chain bots is located at `dcConfigs/dcSpectrumConfig.dhall`. Refer to
+the [example configuration file](https://github.com/spectrum-finance/cardano-dex-backend/blob/master/amm-executor/resources/config.dhall)
+for detailed explanations of each configuration parameter. You can modify the configuration file to suit your needs, or
+keep it unchanged.
 
-```bash
-dcConfigs/dcSpectrumConfig.dhall
-```
-
-The document you have provided contains helpful comments that will assist you in setting up your off-chain service
-instance. However, you may need to make additional updates to ensure that the configuration file is tailored to your
-specific needs.
-
-You will be ready to run the service once you have updated the configuration file to meet your requirements. Please use
-the following command to initiate the service and begin the process.
-
-:::caution
-It is NOT mandatory to run cardano-node separately because it is already included in the `docker-compose.yaml` file.
-:::
+Use the following command to initiate the service:
 
 ```bash
 docker-compose up -d
