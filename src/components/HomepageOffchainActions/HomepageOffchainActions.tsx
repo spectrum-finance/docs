@@ -10,7 +10,6 @@ const actions = [
         content: 'Learn how to start executing Cardano AMM orders and earn execution fees from each swap',
         Icon: Server,
         to: '/cardano-amm/off-chain-execution-bots',
-        soon: true,
     },
     {
         title: 'Become an Ergo DEX Off-chain Operator',
