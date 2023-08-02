@@ -4,6 +4,4 @@ title: White Paper
 sidebar_position: 3
 ---
 
-:::caution
-The White Paper of the Spectrum Protocol is on its last development stages and will be published in Q3 2023.
-:::
+<div class="whitepaper-iframe-wrapper"><iframe src="https://spectrum.fi/spectrum_wp_v1.pdf" width="100%" height="100%"></iframe></div>

@@ -253,3 +253,6 @@ article a.breadcrumbs__link:hover {
     border-bottom: none;
 }
 
+.whitepaper-iframe-wrapper {
+    height: 90vh;
+}

@@ -116,7 +116,7 @@ const config = {
                 // Right side header
                 {
                     // href: 'https://spectrum.fi/spectrum-white-paper.pdf',
-                    to: '/concepts/spectrum-network/white-paper',
+                    href: 'https://spectrum.fi/spectrum_wp_v1.pdf',
                     position: 'right',
                     label: 'White Paper'
                 },
