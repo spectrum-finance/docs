@@ -18,7 +18,46 @@ sidebar_position: 1
 
 ### Docker Image
 
-This section is under development. Use Compiling from Souce Code section to obtain an off-chain batcher for now.
+Using a Docker image can help you run a bot without installing all Cardano and Haskell-related dependencies. This method is simpler than compiling from source.
+
+To run bots using Docker, you can use the prepared [spectrum-finance Docker image](https://hub.docker.com/r/spectrumlabs/spectrum-cardano-backend) and [docker-compose](https://github.com/spectrum-finance/cardano-dex-backend/blob/master/docker-compose.yaml) files.
+
+First of all, you need to copy the official GitHub repository into your working directory.
+
+```bash
+mkdir -p ~/workDir
+
+cd ~/workDir
+
+git clone https://github.com/spectrum-finance/cardano-dex-backend.git
+
+cd cardano-dex-backend
+```
+
+The next step is to create a cyphered container. Follow the steps from "Wallet Setup" to create `payment.vkey` and `payment.skey`. You can use the Wallet-helper image to create the ciphered container.
+
+```bash
+docker run -v ${PATH_TO_FOLDER_WITH_KEYS}:/testWallet spectrumlabs/spectrum-wallet-helper:0.0.1.0 /testWallet/cypher.json /testWallet/payment.skey YOUR_PASSWORD
+```
+
+After running this command, you will find the encrypted container in the `PATH_TO_FOLDER_WITH_KEYS`, along with the keys.
+
+The next step is to configure the bot. Open `~/src/cardano-dex-backend/dcConfigs/dcSpectrumConfig.dhall` and adjust the settings according to your preferences. You can also find comments on the configuration file [here](https://github.com/spectrum-finance/cardano-dex-backend/blob/master/amm-executor/resources/config.dhall).
+
+After completing the configuration, open `docker-compose.yaml` and ensure that all settings are correct for your setup. In particular, check the mapping `${PWD}/myKeys/cypher.json:/etc/wallet1TS.json`. It should match your path to the keys: `YOUR_PATH_TO_KEYS/cypher.json:/etc/wallet1TS.json`.
+
+:::info
+The official docker-compose file also contains the `cardano-node` image. If you are using your own, just comment out the lines in the docker-compose file and change the mapping for yours in the volume setting of spectrum-cardano-backend, such as `cardano-node-ipc:/ipc`.
+:::
+
+After completing all of the above steps, just run the command.
+
+```bash
+docker-compose up -d
+```
+
+Logs can be found in the "spectrum-backend-volume" volume.
+
 
 ### Compiling from Source Code
 
